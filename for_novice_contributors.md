@@ -16,7 +16,7 @@
 - If NO:
 1. Fork a copy of the master repository (i.e. ```swcarpentry/<lesson-name>```) ```gh-pages``` branch into your account. Select the ```gh-pages``` branch, then use the Fork button:
 
-![alt text](https://github.com/dmgt/swc_github_flow/edit/master/GitHubFlowForNewbies-1.jpg "GitHubFlowForNewbies-1.jpg - location of fork button")
+![GitHubFlowForNewbies-1.jpg - location of fork button](https://github.com/dmgt/swc_github_flow/edit/master/GitHubFlowForNewbies-1.jpg)
     
 2. When the “Where should we fork this repository?” screen appears, click on your Git username (or other organizational account, if you are a member of any other organizations on GitHub).
 
@@ -25,5 +25,4 @@
 - If YES: 
 1. If you just made the fork, go on to Making Your Edits (ADD LINK).
 2. If you made the fork a while ago, make sure it is up to date with the latest changes in the swcarpentry lesson repository before starting to edit.
-    
-     - Check the status of your repository - look if there is a message underneath the navigation bar, such as:
+3. Check the status of your repository - look if there is a message underneath the navigation bar, such as:
