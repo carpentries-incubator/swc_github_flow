@@ -1,17 +1,17 @@
-### Instructions for contributing with git and GitHub
+## Instructions for contributing with git and GitHub
 
-##### Prerequisites and other options
+#### Prerequisites and other options
 - Editing requires a Github account. You can set one up at [https://github.com](https://github.com).
 - If you don’t want to use Github, you can suggest changes by emailing a lesson maintainer
 
-### Working from the GitHub webpage (graphical interface) 
+## Working from the GitHub webpage (graphical interface) 
 
-##### Getting Ready:
+#### Getting Ready:
 
 1. Identify the url and repository name for the lesson you want to make changes for, eg [https://github.com/swcarpentry/git-novice](https://github.com/swcarpentry/git-novice). The main branch in all the Carpentry lessons is called gh-pages. 
 2. It’s not possible to for you to directly edit the version of the lesson in the Carpentry repository, so the overall idea of “Github Flow” is that you can edit by making your own copy of the lesson repository, making a branch in your own copy, making the changes on that dedicated branch, and then sending your proposed changes back to the Carpentry version of the repository.
 
-###### Have you already forked the repository for this lesson?
+##### Have you already forked the repository for this lesson?
 
 - If NO:
 1. Fork a copy of the master repository (i.e. ```swcarpentry/<lesson-name>```) ```gh-pages``` branch into your account. Select the ```gh-pages``` branch, then use the Fork button:
