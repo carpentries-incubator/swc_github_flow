@@ -16,7 +16,7 @@
 - If NO:
 1. Fork a copy of the master repository (i.e. ```swcarpentry/<lesson-name>```) ```gh-pages``` branch into your account. Select the ```gh-pages``` branch, then use the Fork button:
 
-![GitHubFlowForNewbies-1.jpg - location of fork button](https://github.com/dtwrub/swc_github_flow/tree/patch-1/images/GitHubFlowForNewbies-1.jpg)
+![alt text](swc_github_flow/images/GitHubFlowForNewbies-1.jpg "GitHubFlowForNewbies-1.jpg - location of fork button")
     
 2. When the “Where should we fork this repository?” screen appears, click on your Git username (or other organizational account, if you are a member of any other organizations on GitHub).
 
@@ -28,7 +28,7 @@
 
 1. Check the status of your repository - look if there is a message underneath the navigation bar, such as:
 
-![GitHubFlowForNewbies-2.jpg - # commits behind](https://github.com/dtwrub/swc_github_flow/tree/patch-1/images/GitHubFlowForNewbies-2.jpg)
+![alt text](swc_github_flow/images/GitHubFlowForNewbies-2.jpg "GitHubFlowForNewbies-2.jpg - # commits behind")
 
 If the message says that your branch is behind in commits, proceed to the next step. If it says that your branch is even, proceed to the Making Your Edits section.
 
@@ -36,25 +36,25 @@ If the message says that your branch is behind in commits, proceed to the next s
     
 3. If you see a message saying there isn’t anything to compare, as:
     
-ADD IMAGE 3 - base switch
+![alt text](swc_github_flow/images/GitHubFlowForNewbies-3.jpg "GitHubFlowForNewbies-3.jpg - base switch")
     
 That means that GitHub is comparing your changes with the master repository. In other words, everything that you have, the master has also. In order to make the opposite comparison - see what the master has that you do not - click on the “switching the base” link.
     
 4. You should now see something similar to:
     
-ADD IMAGE 4 - comparing changes, able to merge
+![alt text](swc_github_flow/images/GitHubFlowForNewbies-4.jpg "GitHubFlowForNewbies-4.jpg - compare changes")
     
 The base and head forks have now been switched, so the comparison is now between the changes in the master repository and yours.
 
 5. Click “Create pull request” - this is creating a pull request to you (for your repository) asking to pull changes from the master repository into your repository. Enter a title for the request and then click “Create pull request”:
     
-ADD MAGE 5 - open a pull request
+![alt text](swc_github_flow/images/GitHubFlowForNewbies-5.jpg "GitHubFlowForNewbies-5.jpg - open a pull request")
     
 6. On the next screen click “View pull request” to view the pull request you just created for your repository.
     
 7. Towards the bottom of the screen, look for this message:
     
-ADD IMAGE 6 - merge pull request
+![alt text](swc_github_flow/images/GitHubFlowForNewbies-6.jpg "GitHubFlowForNewbies-5.jpg - merge pull request")
     
 Click on “Merge pull request”, add any notes you want, then click “Confirm merge”.
 
