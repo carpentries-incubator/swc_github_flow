@@ -54,13 +54,29 @@ The base and head forks have now been switched, so the comparison is now between
     
 7. Towards the bottom of the screen, look for this message:
     
-![alt text](swc_github_flow/images/GitHubFlowForNewbies-6.jpg "GitHubFlowForNewbies-5.jpg - merge pull request")
+![alt text](swc_github_flow/images/GitHubFlowForNewbies-6.jpg "GitHubFlowForNewbies-6.jpg - merge pull request")
     
 Click on “Merge pull request”, add any notes you want, then click “Confirm merge”.
 
 8. The status should now be “Merged”, and your repository will be up to date with all the changes from the remote repository.
     
-##### Making Your Edits:
+#### Making Your Edits:
 
-    
+1. Create a new branch in your fork of the master repository for each significant change you wish to make. Do this by clicking on the Branch **dropdown**, and entering a new branch name in the “Find or create a branch…” dialog:
+
+![alt text](swc_github_flow/images/GitHubFlowForNewbies-7.jpg "GitHubFlowForNewbies-7.jpg - create branch")
+
+Click the blue “create branch” button and this will create a copy of whatever branch you have selected in the drop-down (in this case, “gh-pages”) into a new branch named whatever you enter for the name.
+
+2. Make any changes to any files in the branch you just created. Since you are making changes in a branch you just created, select “Commit directly” and then click “Commit changes”:
+
+![alt text](swc_github_flow/images/GitHubFlowForNewbies-8.jpg "GitHubFlowForNewbies-8.jpg - commit changes")
+
+3. You’ll now see that the branch will be a commit ahead of the master - click on “Pull request” to open the Pull Request submission screen to submit those changes to the master repository for consideration:
+
+![alt text](swc_github_flow/images/GitHubFlowForNewbies-9.jpg "GitHubFlowForNewbies-9.jpg - pull request to update your repository")
+
+
+
+
     
