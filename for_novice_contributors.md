@@ -1,8 +1,8 @@
-## Instructions for contributing with git and GitHub
+## Instructions for contributing with Git and GitHub
 
 #### Prerequisites and other options
-- Editing requires a Github account. You can set one up at [https://github.com](https://github.com).
-- If you don’t want to use Github, you can suggest changes by emailing a lesson maintainer
+- Editing requires a GitHub account. You can set one up at [https://github.com](https://github.com).
+- If you don’t want to use GitHub, you can suggest changes by emailing a lesson maintainer
 
 ## Working from the GitHub webpage (graphical interface) 
 
