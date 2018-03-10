@@ -76,7 +76,13 @@ Click the blue “create branch” button and this will create a copy of whateve
 
 ![alt text](swc_github_flow/images/GitHubFlowForNewbies-9.jpg "GitHubFlowForNewbies-9.jpg - pull request to update your repository")
 
+4. Add a short explanation of your suggested changes, then press “Submit Pull Request” at the bottom of the page. It will be helpful if your description is more detailed than the commit message (eg you can explain why you changed something). People will be able to see the code you changed though, so you don’t have to repeat every single thing you changed.
 
+* If you make more changes to the branch after making the pull request, those changes will automatically get merged into the existing pull request, as long as the pull request hasn't been closed.
+
+5. Wait for feedback from the community on your Pull Request!
+
+6. If you receive feedback, make the changes on GitHub and the pull request will update automatically.
 
 
     
