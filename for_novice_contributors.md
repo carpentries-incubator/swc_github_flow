@@ -96,4 +96,4 @@ Click the blue “create branch” button and this will create a copy of whateve
 
   2. When the “Where should we fork this repository?” screen appears, click on your Git username (or other organizational account, if you are a member of any other organizations on GitHub).
 
-  3. The lesson will then be forked into your repository.
+  3. Once the lesson has been forked to your repository, click the green “Clone or download” button on the right side of the screen, and copy the url shown:
