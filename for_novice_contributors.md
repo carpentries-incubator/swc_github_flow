@@ -17,8 +17,8 @@
 
     a) Fork a copy of the master repository (i.e. ```swcarpentry/<lesson-name>```) ```gh-pages``` branch into your account. Select the ```gh-pages``` branch, then use the Fork button:
     
-    ADD IMAGE
-    
+    ![1_gh_pages_button](images/1_gh_pages_button.PNG)
+
       b) When the “Where should we fork this repository?” screen appears, click on your Git username (or other organizational account, if you are a member of any other organizations on GitHub).
 
       c) The lesson will then be forked into your repository.
