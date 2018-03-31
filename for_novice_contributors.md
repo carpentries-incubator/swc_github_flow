@@ -33,10 +33,43 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 
     If **YES**:
 
+    TODO: clean up indenting/numbering for this section
+
     a) If you just made the fork, go on to [Making Your Edits](TODO add link).
 
     b) If you made the fork a while ago, make sure it is up to date with the latest changes in the Carpentry lesson repository before starting to edit.
 
-    -   Check the status of your repository - look if there is a message underneath the navigation bar, such as `This branch is <#> commits behind ...'`:
+    -   Check the status of your repository - look if there is a message underneath the navigation bar, such as *"This branch is <#> commits behind ...*"
 
     ![repo_status](images/repo_status.PNG)
+
+      -   If the message says that your branch is even, proceed to the [Making Your Edits](TODO add link) section.
+
+      -   If it says that your branch is behind, proceed to the next step.
+
+    -   Click *"Compare"* (below the green *"Clone or download"* button  on the right (shown above).
+
+        -   If you see a message saying there isn’t anything to compare, such as -
+
+     ![nothing_to_compare](images/nothing_to_compare.PNG)
+
+          That means that GitHub is comparing your changes with the master repository. In other words, everything that you have, the master has also. In order to make the opposite comparison - to see what the master has that you do not - click on the *“switching the base”* link.
+
+          You should now see something similar to:
+
+         ![comparing_changes](images/comparing_changes.PNG)
+
+         The base and head forks have now been switched, so the comparison is now between the changes in the master repository and yours.
+
+         -   Click *“Create pull request”* - this is creating a pull request to you (for your repository) asking to pull changes from the master repository into your repository. Enter a title for the request and then click the green *"Create pull request"* button.
+
+      ![open_a_pull_request](images\open_a_pull_request.PNG)
+
+      -   On the next screen click *“View pull request”* to view the pull request you just created for your repository. Towards the bottom of the screen, look for this message:
+
+      ![merge_pull_request](images\merge_pull_request.PNG)
+
+      -   Click on *“Merge pull request”*, add any notes you want, then click *“Confirm merge”*.
+      -   The status should now be *“Merged”*, and your repository will be up to date with all the changes from the remote repository! Congrats, you are ready to start making your edits!
+
+##### Making your edits
