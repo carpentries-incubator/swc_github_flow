@@ -1,4 +1,4 @@
-### Instructions for contributing with git and GitHub
+## Instructions for contributing with git and GitHub
 
 ##### Prerequisites and other options
 -   Editing requires a GitHub account. You can set one up at <https://github.com>
@@ -7,11 +7,15 @@
 
 Note: The GitHub webpage interface works well for making relatively small edits, like adding a link, fixing typos, or adding several lines of explanation. For more larger edits, the command line interface is recommended.
 
+##### Contents
+  -    Working from the GitHub webpage (graphical interface)
+  -    Working from the
+
 ##### Glossary of terms
 -   TODO
 -   branch, gh-pages, master, origin, upstream, fork, remote
 
-### Working from the GitHub webpage (graphical interface)
+## Option 1 - Working from the GitHub webpage (graphical interface)
 
 ##### Getting Ready:
 
