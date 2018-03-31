@@ -8,8 +8,8 @@
 Note: The GitHub webpage interface works well for making relatively small edits, like adding a link, fixing typos, or adding several lines of explanation. For more larger edits, the command line interface is recommended.
 
 ##### Contents
-  -    Working from the GitHub webpage (graphical interface)
-  -    Working from the
+-   Working from the GitHub webpage (graphical interface)
+-   Working from the terminal (command line interface)
 
 ##### Glossary of terms
 -   TODO
@@ -98,3 +98,46 @@ Note that any additional changes you make on this branch later will also be adde
 5.Wait for feedback from the community on your Pull Request!
 
 6.If you receive feedback, make the changes on GitHub and the pull request will update automatically.
+
+## Working from the terminal (command line interface)
+
+#### Getting ready
+
+1.Identify the url and repository name for the lesson you want to make changes for, eg <https://github.com/swcarpentry/git-novice>. The main branch in all the Carpentry lessons is called **gh-pages**.
+
+2.It’s not possible to for you to directly edit the version of the lesson in the Carpentry repository, so the overall idea of “GitHub Flow” is that you can submit edits by: 1) making your own copy of the lesson repository, 2) making a branch in your own copy, 3) making the changes on that dedicated branch, and then 4) sending your proposed changes back to the Carpentry version of the repository by creating a pull request.
+
+3.Have you already forked the repository for this lesson?
+
+  -   If **NO**:
+
+      a) Fork a copy of the master repository (i.e. swcarpentry/<lesson-name>) **gh-pages** branch into your account. Select the **gh-pages** branch, then use the *Fork* button:
+
+      b) When the *“Where should we fork this repository?”* screen appears, click on your Git username (or other organizational account, if you are a member of any other organizations on GitHub)
+
+      c) Once the lesson has been forked to your repository, click the green *“Clone or download”* button on the right side of the screen, and copy the url shown:
+
+      ![clone_or_download_url1](images\clone_or_download_url1.PNG)
+
+      ![clone_or_download_url2](images\clone_or_download_url2.PNG)
+
+      The url will look something like this:
+         <https://github.com/yourgithubusername/lessonname.git>
+
+      For example if your username was `daisieh` and you forked the `git-novice` lesson the url will be <https://github.com/daisieh/shell-novice.git>
+
+      d) Open your terminal, navigate to a folder you want to keep your copy of the lesson in, and use `git clone` to copy the files from your repository on github to your local computer:
+
+      `git clone https://github.com/yourgithubusername/lessonname.git`
+
+      e) Lastly, you need to add the repository you forked from as a remote using the format `git remote add nameyouchooseforremote https://github.com/url/for/lesson`
+
+      For example: `git remote add swcarpentry https://github.com/swcarpentry/shell-novice`
+
+      Confirm the new remote shows up with `git remote show`. You should see at least two names, including `origin` (or whatever your online repository is called) and the name of your remote, eg `swcarpentry`
+
+      f) You’re all set up - go to step 3 to make your edits
+
+  -   If **YES**:
+
+#### Making your changes
