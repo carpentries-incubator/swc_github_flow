@@ -67,11 +67,11 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 
          -   Click *“Create pull request”* - this is creating a pull request to you (for your repository) asking to pull changes from the master repository into your repository. Enter a title for the request and then click the green *"Create pull request"* button.
 
-      ![open_a_pull_request](images\open_a_pull_request.PNG)
+      ![open_a_pull_request](images/open_a_pull_request.PNG)
 
       -   On the next screen click *“View pull request”* to view the pull request you just created for your repository. Towards the bottom of the screen, look for this message:
 
-      ![merge_pull_request](images\merge_pull_request.PNG)
+      ![merge_pull_request](images/merge_pull_request.PNG)
 
       -   Click on *“Merge pull request”*, add any notes you want, then click *“Confirm merge”*.
       -   The status should now be *“Merged”*, and your repository will be up to date with all the changes from the remote repository! Congrats, you are ready to start making your edits!
@@ -79,17 +79,17 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 ##### Making your edits
 1.Create a new branch in your fork of the master repository for each significant change you wish to make. Do this by clicking on the *'Branch'* dropdown, and entering a new branch name in the *“Find or create a branch…”* dialog
 
-![create_branch](images\create_branch.PNG)
+![create_branch](images/create_branch.PNG)
 
   Click the blue “create branch” button and this will create a copy of whatever branch you have selected in the drop-down (in this case, `gh-pages`) into a new branch named whatever you enter for the name.
 
 2.Make any changes to any files in the branch you just created. Since you are making changes in a branch you just created, select *“Commit directly”* and then click *“Commit changes”*:
 
-  ![commit_changes](images\commit_changes.PNG)
+  ![commit_changes](images/commit_changes.PNG)
 
 3.You’ll now see that the branch will be a commit ahead of the master - click on “Pull request” to open the Pull Request submission screen to submit those changes to the master repository for consideration:
 
-![pull_request_button](images\pull_request_button.PNG)
+![pull_request_button](images/pull_request_button.PNG)
 
 4.Add a short explanation of your suggested changes, then press *“Submit Pull Request”* at the bottom of the page. It will be helpful if your description is more detailed than the commit message (eg you can explain why you changed something). People will be able to see the code you changed though, so you don’t have to repeat every single thing you changed.
 
@@ -117,9 +117,9 @@ Note that any additional changes you make on this branch later will also be adde
 
       c) Once the lesson has been forked to your repository, click the green *“Clone or download”* button on the right side of the screen, and copy the url shown:
 
-      ![clone_or_download_url1](images\clone_or_download_url1.PNG)
+      ![clone_or_download_url1](images/clone_or_download_url1.PNG)
 
-      ![clone_or_download_url2](images\clone_or_download_url2.PNG)
+      ![clone_or_download_url2](images/clone_or_download_url2.PNG)
 
       The url will look something like this:
          <https://github.com/yourgithubusername/lessonname.git>
