@@ -3,7 +3,7 @@
 ##### Prerequisites and other options
 -   Editing requires a GitHub account. You can set one up at <https://github.com>
 -   If you don’t want to use Github, you can suggest changes by emailing a lesson maintainer
-  -   TODO add link to contact maintainers
+    -   TODO add link to contact maintainers
 
 Note: The GitHub webpage interface works well for making relatively small edits, like adding a link, fixing typos, or adding several lines of explanation. For larger edits, the command line interface is recommended.
 
