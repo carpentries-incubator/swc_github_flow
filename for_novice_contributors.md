@@ -122,11 +122,11 @@ Note that any additional changes you make on this branch later will also be adde
       ![clone_or_download_url2](images/clone_or_download_url2.PNG)
 
       The url will look something like this:
-         <https://github.com/yourgithubusername/lessonname.git>
+         *<https://github.com/yourgithubusername/lessonname.git>*
 
       For example if your username was `daisieh` and you forked the `git-novice` lesson the url will be <https://github.com/daisieh/shell-novice.git>
 
-      d) Open your terminal, navigate to a folder you want to keep your copy of the lesson in, and use `git clone` to copy the files from your repository on github to your local computer:
+      d) Open your terminal, navigate to a folder you want to keep your copy of the lesson in, and use `git clone` to copy the files from your repository on GitHub to your local computer:
 
       `git clone https://github.com/yourgithubusername/lessonname.git`
 
@@ -139,5 +139,63 @@ Note that any additional changes you make on this branch later will also be adde
       f) You’re all set up - go to step 3 to make your edits
 
   -   If **YES**:
+      a) Confirm what remote repositories your local copy of the lesson can connect to:
+
+        `git remote show`
+
+        - In the output, if you see two or more names, including `origin` (your repository online) and the name of the account you forked from, eg `swcarpentry`, go on to the next step.
+
+        - If you only see `origin`, you need to add the repository you forked from as a remote using `git remote add nameyouchooseforremote https://github.com/url/for/lesson `
+
+        For example, to add the *shell-novice* lesson as a remote named *swcarpentry*:
+        `git remote add swcarpentry https://github.com/swcarpentry/shell-novice`
+
+        Confirm the new remote shows up with `git remote show` and you're ready for the next step
+
+   b)  It’s best practice to make sure your copy of the lesson is up-to-date with the latest changes to the Carpentry version of the lesson, so the difference between your proposed changes and the existing lesson will only be the edits you’re about to make, and not include extra differences between older and newer versions of the lesson you’re editing. We’re going to use `git pull`, assuming you are ok to overwrite your current version of the lesson with the most recent version from the Carpentry repo:
+
+   `git pull`
+
+   c) Commit your update, using the `-m` flag to include a short  message explaining what changed inside quote marks:
+
+   ` git commit -m “updates from latest Carpentry lesson"`
+
+    d) Push your newly updated local copy of `gh-pages` back to your own Github repository  too:
+
+    `git push`
+
+    Now you’re ready to start editing!
+
+    Note: some open source projects refer to the main branch as `master` , so you may see this term used in other examples online, instead of `gh-pages`.
 
 #### Making your changes
+
+4.For each change or group of changes you want to make, start by making a new branch on your local copy of the repository with `git checkout -b newbranchname`. It’s helpful to give the branch a relevant  name eg:
+
+`git checkout -b extraexamples`
+ or
+`git checkout -b fixtypo`
+
+You can see a list of existing branches, and the branch you’re currently on with the command `git branch`
+
+5.On your new branch, make your edits and commit the changes in that branch.
+
+For example: `git commit -m “Added grep example to section 3” `
+
+6.Staying on the same branch, push your local edited branch to your fork of the lesson on GitHub with `git push origin newbranchname`:
+
+For example: `git push origin extraexamples`
+
+7.Go back to GitHub in your internet browser, go to your new branch (in your forked repository) and press the green “Compare and Pull Request Button” on the right:
+
+![compare_and_pull_request](images/compare_and_pull_request.PNG)
+*Example where the name of the most recently push branch is called 'contributing'*
+
+8.Add a short explanation of your suggested changes, then press “Submit Pull Request” at the bottom of the page.
+It will be helpful if your description is more detailed than the commit message (eg you can explain why you changed something). People will be able to see the code you changed though, so you don’t have to repeat every single thing you changed.
+
+9.Wait for feedback from the community on your Pull Request!
+
+10.If you want to make additional changes (because you got feedback or think of related improvements), use the terminal to switch back to the branch on your local version that you made the previous edits on (e.g `git checkout extraexamples`), make your additional changes,  and commit and push them.
+
+When you look at the pull request on GitHub it will update automatically to include the new changes you've pushed. 
