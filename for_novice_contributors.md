@@ -3,13 +3,14 @@
 ##### Prerequisites and other options
 -   Editing requires a GitHub account. You can set one up at <https://github.com>
 -   If you don’t want to use Github, you can suggest changes by emailing a lesson maintainer
--   TODO add link to contact maintainers
+  -   TODO add link to contact maintainers
 
-Note: The GitHub webpage interface works well for making relatively small edits, like adding a link, fixing typos, or adding several lines of explanation. For more larger edits, the command line interface is recommended.
+Note: The GitHub webpage interface works well for making relatively small edits, like adding a link, fixing typos, or adding several lines of explanation. For larger edits, the command line interface is recommended.
 
 ##### Contents
--   Working from the GitHub webpage (graphical interface)
--   Working from the terminal (command line interface)
+-   Option 1- Working from the GitHub webpage (graphical interface)
+-   Option 2- Working from the terminal (command line interface)
+
 
 ##### Glossary of terms
 -   TODO
@@ -99,29 +100,31 @@ Note that any additional changes you make on this branch later will also be adde
 
 6.If you receive feedback, make the changes on GitHub and the pull request will update automatically.
 
-## Working from the terminal (command line interface)
+## Option 2 - Working from the terminal (command line interface)
 
 #### Getting ready
 
 1.Identify the url and repository name for the lesson you want to make changes for, eg <https://github.com/swcarpentry/git-novice>. The main branch in all the Carpentry lessons is called **gh-pages**.
 
-2.It’s not possible to for you to directly edit the version of the lesson in the Carpentry repository, so the overall idea of “GitHub Flow” is that you can submit edits by: 1) making your own copy of the lesson repository, 2) making a branch in your own copy, 3) making the changes on that dedicated branch, and then 4) sending your proposed changes back to the Carpentry version of the repository by creating a pull request.
+2.It’s not possible to directly edit the version of the lesson in the Carpentry repository, so the overall idea of “GitHub Flow” is that you can submit edits by: 1) making your own copy of the lesson repository, 2) making a branch in your own copy, 3) making the changes on that dedicated branch, and then 4) sending your proposed changes back to the Carpentry version of the repository by creating a pull request.
 
 3.Have you already forked the repository for this lesson?
 
-  -   If **NO**:
+  -   If **NO** :
 
-      a) Fork a copy of the master repository (i.e. swcarpentry/<lesson-name>) **gh-pages** branch into your account. Select the **gh-pages** branch, then use the *Fork* button:
+      a) a) Fork a copy of the base repository's  ```gh-pages``` branch into your account. Do this by selecting ```gh-pages``` on the dropdown option of branches on the left hand side of the repository's page, then clicking the *'Fork'* button on the upper right:
+
+      ![1_gh_pages_button](images/1_gh_pages_button.PNG)
 
       b) When the *“Where should we fork this repository?”* screen appears, click on your Git username (or other organizational account, if you are a member of any other organizations on GitHub)
 
-      c) Once the lesson has been forked to your repository, click the green *“Clone or download”* button on the right side of the screen, and copy the url shown:
+      c) Once the lesson has been forked to your repository, click the green *“Clone or download”* button on the right side of the screen, and copy the url that pops up below:
 
       ![clone_or_download_url1](images/clone_or_download_url1.PNG)
 
       ![clone_or_download_url2](images/clone_or_download_url2.PNG)
 
-      The url will look something like this:
+      The url will end in *.git* and look something like this:
          *<https://github.com/yourgithubusername/lessonname.git>*
 
       For example if your username was `daisieh` and you forked the `git-novice` lesson the url will be <https://github.com/daisieh/shell-novice.git>
@@ -136,9 +139,10 @@ Note that any additional changes you make on this branch later will also be adde
 
       Confirm the new remote shows up with `git remote show`. You should see at least two names, including `origin` (or whatever your online repository is called) and the name of your remote, eg `swcarpentry`
 
-      f) You’re all set up - go to step 3 to make your edits
+      f) You’re all set up - go to step 4 to make your edits
 
   -   If **YES**:
+
       a) Confirm what remote repositories your local copy of the lesson can connect to:
 
         `git remote show`
@@ -160,7 +164,7 @@ Note that any additional changes you make on this branch later will also be adde
 
    ` git commit -m “updates from latest Carpentry lesson"`
 
-    d) Push your newly updated local copy of `gh-pages` back to your own Github repository  too:
+    d) Push your newly updated local copy of `gh-pages` back to your own remote repository too:
 
     `git push`
 
@@ -182,20 +186,28 @@ You can see a list of existing branches, and the branch you’re currently on wi
 
 For example: `git commit -m “Added grep example to section 3” `
 
-6.Staying on the same branch, push your local edited branch to your fork of the lesson on GitHub with `git push origin newbranchname`:
+6.Staying on the same branch, push your local edited branch to your fork of the lesson on GitHub with `git push origin newbranchname`.
 
 For example: `git push origin extraexamples`
 
-7.Go back to GitHub in your internet browser, go to your new branch (in your forked repository) and press the green “Compare and Pull Request Button” on the right:
+7.Go back to your forked repository on GitHub in your internet browser, and navigate to your new branch using the dropdown menu under the **branch** button:
+
+![navigating_to_a_branch1](images/navigating_to_a_branch1.PNG)
+
+![navigating_to_a_branch2](images/navigating_to_a_branch2.PNG)
+
+8.Once on your new branch, press the green “Compare and Pull Request Button” on the right:
 
 ![compare_and_pull_request](images/compare_and_pull_request.PNG)
 *Example where the name of the most recently push branch is called 'contributing'*
 
-8.Add a short explanation of your suggested changes, then press “Submit Pull Request” at the bottom of the page.
+9.Add a short explanation of your suggested changes, then press “Submit Pull Request” at the bottom of the page.
 It will be helpful if your description is more detailed than the commit message (eg you can explain why you changed something). People will be able to see the code you changed though, so you don’t have to repeat every single thing you changed.
 
-9.Wait for feedback from the community on your Pull Request!
+10.Wait for feedback from the community on your pull request!
 
-10.If you want to make additional changes (because you got feedback or think of related improvements), use the terminal to switch back to the branch on your local version that you made the previous edits on (e.g `git checkout extraexamples`), make your additional changes,  and commit and push them.
+11.If you want to make additional changes (because you got feedback or think of related improvements), use the terminal to switch back to the branch on your local version that you made the previous edits on. The git command to return to a branch is `git checkout newbranchname`, e.g `git checkout extraexamples`.
 
-When you look at the pull request on GitHub it will update automatically to include the new changes you've pushed. 
+Then make your additional changes,  and commit and push them.
+
+When you look at the pull request on GitHub it will update automatically to include the new changes you've pushed.
