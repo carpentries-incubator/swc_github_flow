@@ -18,40 +18,50 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 -   *repository (short form: repo)* - a storage area for a project containing all the files for the project and the history of all the changes made to those files
 -   *local copy*
   -   a version of file stored on your own computer
--   *remote copy*
+-   *remote copy (also called upstream copy)*
   -   a version of a file stored outside of your own computer, for example stored on an external server
 -   *branch*
-    -   a *branch* is a named series of git commits. The default branch when you download a Carpentry lesson is called `gh-pages`. Creating a new branch makes a parallel version of a repository where changes can be made that affect the new branch only and not the original (base) version of the repository.  New branches are often used to test changes or new ideas, which can later be merged with the base branch. Moving from one branch to another is called *checking out* a new branch.
+    -   a *branch* is a named series of git commits. The default branch when you download a Carpentry lesson is called **gh-pages**. Creating a new branch makes a parallel version of a repository where changes can be made that affect the new branch only and not the original (base) version of the repository.  New branches are often used to test changes or new ideas, which can later be merged with the base branch. Moving from one branch to another is called *checking out* a new branch.
 -   *gh-pages*
   - stands for "GitHub Pages". This is the name of the main branch in each of the Carpentry lesson material repositories. Branches called gh-pages can be published as webpages hosted by GitHub.
 -   *origin*
-  - a remote repository you want to download files from or compare local changes you have made to
+  -   a remote repository you want to download files from or compare local changes you have made to
 -   *push*
-  - send saved changes you have made on your local computer to a remote repository. For a change to show up on GitHub, the saved changes must be *pushed* from your computer to the remote repository.
+  -   send saved changes you have made on your local computer to a remote repository. For a change to show up on GitHub, the saved changes must be *pushed* from your computer to the remote repository.
 -   *pull*
-  - download saved changes from a remote repository to your local version of the same repository. This is useful when other people have made changes to a shared project, and you want to download (*pull*) the changes from the shared remote repository to your own computer.
+  -   download saved changes from a remote repository to your local version of the same repository. This is useful when other people have made changes to a shared project, and you want to download (*pull*) the changes from the shared remote repository to your own computer.
+-   *pull request*  
+  -   send proposed changes from a specific version of a repository back to the main version of a repository to be considered for incorporation by the people maintaining the repository (the maintainers)
 -   *fork* (GitHub-specific term)
-  - to copy a repository from another user and store it under your own account.
+  -   to copy a repository from another user and store it under your own account.
 
 ## Option 1 - Working from the GitHub webpage (graphical interface)
 
 ##### Getting Ready:
 
-1.  Identify the url and repository name for the lesson you want to make changes for, eg <https://github.com/swcarpentry/git-novice>. The base branch in all the Carpentry lessons is called `gh-pages`.
+1.  Identify the url and repository name for the lesson you want to make changes for, eg <https://github.com/swcarpentry/git-novice>. The base branch in all the Carpentry lessons is called **gh-pages**.
 
-2.  It’s not possible to for you to directly edit the version of the lesson in the Carpentry repository, so the overall idea of “GitHub Flow” is that you can submit edits by: 1) making your own copy of the lesson repository, 2) making a branch in your own copy, 3) making the changes on that dedicated branch, and then 4) sending your proposed changes back to the Carpentry version of the repository by creating a pull request.
+2.  It’s not possible to for you to directly edit the version of the lesson in the Carpentry repository, so the overall idea of “GitHub Flow” is that you can submit edits by:
+
+  1) making your own copy of the lesson repository
+
+  2) making a branch in your own copy
+
+  3) making the changes on that dedicated branch, and then
+
+  4) sending your proposed changes back to the Carpentry version of the repository by creating a **pull request**.
 
 3.  Have you already forked the repository for this lesson?
 
-    If **NO**:
+    If **NO** (you have not yet forked the repository for this lesson):
 
-    a) Fork a copy of the base repository's  ```gh-pages``` branch into your account. Do this by selecting ```gh-pages``` on the dropdown option of branches on the left hand side of the repository's page, then clicking the 'Fork' button in the upper right:
+    a) Fork a copy of the lesson repository's  ```gh-pages``` branch into your account . Do this by selecting ```gh-pages``` on the dropdown option of branches on the left hand side of the repository's page, then clicking the 'Fork' button in the upper right:
 
-    ![1_gh_pages_button](images/1_gh_pages_button.PNG)
+    ![alt text](images/1_gh_pages_button.PNG "1_gh_pages_button.PNG - location of branch menu and fork button")
 
-      b) When the *“Where should we fork this repository?”* screen appears, click on your Git username (or other organizational account, if you are a member of any other organizations on GitHub).
+    b) When the *“Where should we fork this repository?”* screen appears, click on your GitHub username (or other organizational account, if you are a member of any other organizations on GitHub).
 
-      c) The lesson will then be forked into your repository.
+    c) The lesson will then be forked into a new copy of the repository under your username or your organizational account (it may take a minute or two for the copying to complete).
 
     If **YES**:
 
