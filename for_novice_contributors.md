@@ -8,13 +8,30 @@
 Note: The GitHub webpage interface works well for making relatively small edits, like adding a link, fixing typos, or adding several lines of explanation. For larger edits, the command line interface is recommended.
 
 ##### Contents
--   Option 1- Working from the GitHub webpage (graphical interface)
--   Option 2- Working from the terminal (command line interface)
+-   Option 1- Use a graphical interface (the GitHub webpage)
+-   Option 2- Use a command line interface with git
 
 
-##### Glossary of terms
--   TODO
--   branch, gh-pages, master, origin, upstream, fork, remote
+##### Glossary of some terms related to git and GitHub
+-   **For more details, see the Carpentry [git lesson reference page](http://swcarpentry.github.io/git-novice/reference/)**
+-   TODO - review definitions, figure out how much detail to include, potentially reorder
+-   *repository (short form: repo)* - a storage area for a project containing all the files for the project and the history of all the changes made to those files
+-   *local copy*
+  -   a version of file stored on your own computer
+-   *remote copy*
+  -   a version of a file stored outside of your own computer, for example stored on an external server
+-   *branch*
+    -   a *branch* is a named series of git commits. The default branch when you download a Carpentry lesson is called `gh-pages`. Creating a new branch makes a parallel version of a repository where changes can be made that affect the new branch only and not the original (base) version of the repository.  New branches are often used to test changes or new ideas, which can later be merged with the base branch. Moving from one branch to another is called *checking out* a new branch.
+-   *gh-pages*
+  - stands for "GitHub Pages". This is the name of the main branch in each of the Carpentry lesson material repositories. Branches called gh-pages can be published as webpages hosted by GitHub.
+-   *origin*
+  - a remote repository you want to download files from or compare local changes you have made to
+-   *push*
+  - send saved changes you have made on your local computer to a remote repository. For a change to show up on GitHub, the saved changes must be *pushed* from your computer to the remote repository.
+-   *pull*
+  - download saved changes from a remote repository to your local version of the same repository. This is useful when other people have made changes to a shared project, and you want to download (*pull*) the changes from the shared remote repository to your own computer.
+-   *fork* (GitHub-specific term)
+  - to copy a repository from another user and store it under your own account.
 
 ## Option 1 - Working from the GitHub webpage (graphical interface)
 
