@@ -86,7 +86,7 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 
   -   If you see a message saying **there isn’t anything to compare**, such as -
 
-     ![nothing_to_compare](images/nothing_to_compare.PNG)
+    ![nothing_to_compare](images/nothing_to_compare.PNG)
 
       That means that GitHub is comparing your changes with the master repository. In other words, everything that you have, the master has too. In order to make the opposite comparison - to see what the master has that you do not - click on the *“switching the base”* link.
 
