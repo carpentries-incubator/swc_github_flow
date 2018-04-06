@@ -8,7 +8,7 @@
 Note: The GitHub webpage interface works well for making relatively small edits, like adding a link, fixing typos, or adding several lines of explanation. For larger edits, the command line interface is recommended.
 
 ### Contents
--   Option 1- Use a graphical interface (the GitHub webpage)
+-   [Option 1- Use a graphical interface (the GitHub webpage)](## Option 1 - Use a graphical interface (the GitHub webpage)
 -   Option 2- Use a command line interface with git
 
 
