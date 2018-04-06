@@ -36,7 +36,7 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 -   *fork* (GitHub-specific term)
     -   to copy a repository from another user and store it under your own account.
 
-## Option 1 - Working from the GitHub webpage (graphical interface)
+## Option 1 - Use a graphical interface (the GitHub webpage)
 
 ##### Getting Ready:
 
@@ -58,43 +58,45 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 
     a) Fork a copy of the lesson repository's  ```gh-pages``` branch into your account . Do this by selecting ```gh-pages``` on the dropdown option of branches on the left hand side of the repository's page, then clicking the 'Fork' button in the upper right:
 
-    ![alt text](images/1_gh_pages_button.PNG "1_gh_pages_button.PNG - location of branch menu and fork button")
+    ![alt text](images/gh_pages_button.PNG "gh_pages_button.PNG - location of branch menu and fork button")
 
     b) When the *“Where should we fork this repository?”* screen appears, click on your GitHub username (or other organizational account, if you are a member of any other organizations on GitHub).
 
-    c) The lesson will then be forked into a new copy of the repository under your username or your organizational account (it may take a minute or two for the copying to complete).
+    c) The lesson will then be forked into a new copy of the repository under your username or your organizational account (it may take a minute or two for the copying to complete). Now you are ready to make edits.
 
     If **YES**:
 
-    TODO: clean up indenting/numbering for this section
+TODO: clean up indenting/numbering for this section
 
-    a) If you just made the fork, go on to [Making Your Edits](TODO add link).
+ -  If you just made the fork, go on to [Making Your Edits](TODO add link).
 
-    b) If you made the fork a while ago, make sure it is up to date with the latest changes in the Carpentry lesson repository before starting to edit.
+-   If you made the fork a while ago, make sure it is up to date with the latest changes in the Carpentry lesson repository with these instructions before starting to edit .
 
-    -   Check the status of your repository - look if there is a message underneath the navigation bar, such as *"This branch is <#> commits behind ...*"
+1.Check the status of your repository - look if there is a message underneath the navigation bar, such as *"This branch is <#> commits behind ...*"
 
-    ![repo_status](images/repo_status.PNG)
+  ![alt text](images/repo_status.PNG "repo_status.PNG - repo with commits behind message")
 
-      -   If the message says that your branch is even, proceed to the [Making Your Edits](TODO add link) section.
+  -   If the message says that your branch is **even**, proceed to the [Making Your Edits](TODO add link) section.
 
-      -   If it says that your branch is behind, proceed to the next step.
+  -   If it says that your branch is **behind**,  click the grey *"Compare"* icon (below the green *"Clone or download"* button)  on the right:
 
-    -   Click *"Compare"* (below the green *"Clone or download"* button  on the right (shown above).
+    ![alt text](images/compare.PNG "compare.PNG - compare button")
 
-        -   If you see a message saying there isn’t anything to compare, such as -
+  -   If you see a message saying there isn’t anything to compare, such as -
 
      ![nothing_to_compare](images/nothing_to_compare.PNG)
 
-          That means that GitHub is comparing your changes with the master repository. In other words, everything that you have, the master has also. In order to make the opposite comparison - to see what the master has that you do not - click on the *“switching the base”* link.
+      That means that GitHub is comparing your c
 
-          You should now see something similar to:
+      hanges with the master repository. In other words, everything that you have, the master has also. In order to make the opposite comparison - to see what the master has that you do not - click on the *“switching the base”* link.
+
+      You should now see something similar to:
 
          ![comparing_changes](images/comparing_changes.PNG)
 
-         The base and head forks have now been switched, so the comparison is now between the changes in the master repository and yours.
+      The base and head forks have now been switched, so the comparison is now between the changes in the master repository and yours.
 
-         -   Click *“Create pull request”* - this is creating a pull request to you (for your repository) asking to pull changes from the master repository into your repository. Enter a title for the request and then click the green *"Create pull request"* button.
+      Click *“Create pull request”* - this is creating a pull request to you (for your repository) asking to pull changes from the master repository into your repository. Enter a title for the request and then click the green *"Create pull request"* button.
 
       ![open_a_pull_request](images/open_a_pull_request.PNG)
 
@@ -128,7 +130,7 @@ Note that any additional changes you make on this branch later will also be adde
 
 6.If you receive feedback, make the changes on GitHub and the pull request will update automatically.
 
-## Option 2 - Working from the terminal (command line interface)
+## Option 2 - Use a command line interface with git
 
 #### Getting ready
 
