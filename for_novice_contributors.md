@@ -186,8 +186,9 @@ TODO - add a concluding note here and thank people for submitting feedback?
 
     f) You’re all set up - go to step 4 to make your edits
 
-  If **YES** (you have already forked the repository for this lesson):
-      a) Confirm what remote repositories your local copy of the lesson can connect to:
+    If **YES** (you have already forked the repository for this lesson):
+
+    a) Confirm what remote repositories your local copy of the lesson can connect to:
 
       `git remote show`
 
@@ -200,21 +201,21 @@ TODO - add a concluding note here and thank people for submitting feedback?
 
       Confirm the new remote shows up with `git remote show` and you're ready for the next step
 
-      b)  It’s best practice to make sure your copy of the lesson is up-to-date with the latest changes to the Carpentry version of the lesson, so the difference between your proposed changes and the existing lesson will only be the edits you’re about to make, and not include extra differences between older and newer versions of the lesson you’re editing. We’re going to use `git pull`, assuming you are ok to overwrite your current version of the lesson with the most recent version from the Carpentry repo:
+    b)  It’s best practice to make sure your copy of the lesson is up-to-date with the latest changes to the Carpentry version of the lesson, so the difference between your proposed changes and the existing lesson will only be the edits you’re about to make, and not include extra differences between older and newer versions of the lesson you’re editing. We’re going to use `git pull`, assuming you are ok to overwrite your current version of the lesson with the most recent version from the Carpentry repo:
 
      `git pull`
 
-     c) Commit your update, using the `-m` flag to include a short  message explaining what changed inside quote marks:
+    c) Commit your update, using the `-m` flag to include a short  message explaining what changed inside quote marks:
 
      ` git commit -m “updates from latest Carpentry lesson"`
 
-     d) Push your newly updated local copy of `gh-pages` back to your own remote repository too:
+    d) Push your newly updated local copy of `gh-pages` back to your own remote repository too:
 
       `git push`
 
-      Now you’re ready to start editing!
+    Now you’re ready to start editing!
 
-     Note: some open source projects refer to the main branch as `master` , so you may see this term used in other examples online, instead of `gh-pages`.
+    Note: some open source projects refer to the main branch as `master` , so you may see this term used in other examples online, instead of `gh-pages` or the 'base' branch.
 
 ### Making your edits
 
