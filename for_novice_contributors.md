@@ -8,8 +8,8 @@
 Note: The GitHub webpage interface works well for making relatively small edits, like adding a link, fixing typos, or adding several lines of explanation. For larger edits, the command line interface is recommended.
 
 ### Contents
--   [Option 1- Use a graphical interface (the GitHub webpage)] (#gui)
--   [Option 2- Use a command line interface with git] (#cli)
+-   [Option 1- Use a graphical interface (the GitHub webpage)](## Option 1 - Use a graphical interface (the GitHub webpage)
+-   Option 2- Use a command line interface with git
 
 
 ### Glossary of some version control vocabulary related to git and GitHub
@@ -36,7 +36,6 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 -   *fork* (GitHub-specific term)
     -   to copy a repository from another user and store it under your own account.
 
-<a name="gui"/>
 ## Option 1 - Use a graphical interface (the GitHub webpage)
 
 ### Getting Ready:
@@ -135,7 +134,6 @@ If you make more changes to this branch after making the pull request, those cha
 
 TODO - add a concluding note here and thank people for submitting feedback?
 
-<a name="cli"/>
 ## Option 2 - Use a command line interface with git
 
 ### Getting ready
