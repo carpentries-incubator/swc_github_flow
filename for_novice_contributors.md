@@ -122,7 +122,7 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 
 3.You’ll now see that your new branch with the edits will be a commit ahead of the base branch - click on *“Pull request”* to open the Pull Request submission screen to submit those changes to the master repository for consideration:
 
-![pull_request_button](images/pull_request_button.PNG)
+![alt text](images/pull_request_button.PNG "pull_request_button.PNG")
 
 4.Add a short explanation of your suggested changes, then press *“Submit Pull Request”* at the bottom of the page. It will be helpful if your description is more detailed than the commit message (eg you can explain why you changed something). People will be able to see the code you changed though, so you don’t have to repeat every single thing you changed.
 
@@ -132,77 +132,89 @@ If you make more changes to this branch after making the pull request, those cha
 
 6.If you receive feedback, make the changes on GitHub and the pull request will update automatically.
 
+TODO - add a concluding note here and thank people for submitting feedback?
+
 ## Option 2 - Use a command line interface with git
 
 ### Getting ready
 
-1.Identify the url and repository name for the lesson you want to make changes for, eg <https://github.com/swcarpentry/git-novice>. The main branch in all the Carpentry lessons is called **gh-pages**.
+1.  Identify the url and repository name for the lesson you want to make changes for, eg <https://github.com/swcarpentry/git-novice>. The main branch in all the Carpentry lessons is called **gh-pages**.
 
-2.It’s not possible to directly edit the version of the lesson in the Carpentry repository, so the overall idea of “GitHub Flow” is that you can submit edits by: 1) making your own copy of the lesson repository, 2) making a branch in your own copy, 3) making the changes on that dedicated branch, and then 4) sending your proposed changes back to the Carpentry version of the repository by creating a pull request.
+2.  It’s not possible to for you to directly edit the version of the lesson in the Carpentry repository, so the overall idea of “GitHub Flow” is that you can submit edits by:
 
-3.Have you already forked the repository for this lesson?
+    i) making your own copy of the lesson repository
 
-  -   If **NO** :
+    ii) making a branch in your own copy
 
-      a) a) Fork a copy of the base repository's  ```gh-pages``` branch into your account. Do this by selecting ```gh-pages``` on the dropdown option of branches on the left hand side of the repository's page, then clicking the *'Fork'* button on the upper right:
+    iii) making the changes on that dedicated branch, and then
 
-      ![1_gh_pages_button](images/1_gh_pages_button.PNG)
+    iv) sending your proposed changes back to the Carpentry version of the repository by creating a **pull request**.
 
-      b) When the *“Where should we fork this repository?”* screen appears, click on your Git username (or other organizational account, if you are a member of any other organizations on GitHub)
+3.  Have you already forked the repository for this lesson?
 
-      c) Once the lesson has been forked to your repository, click the green *“Clone or download”* button on the right side of the screen, and copy the url that pops up below:
+  If **NO** (you have not yet forked the repository for this lesson):
+
+      a) Fork a copy of the lesson repository's  ```gh-pages``` branch into your account. Do this by selecting ```gh-pages``` on the dropdown option of branches on the left hand side of the repository's page, then clicking the *'Fork'* button on the upper right:
+
+      ![alt text](images/gh_pages_button.PNG "gh_pages_button.PNG - location of branch menu and fork button")
+
+      b) When the *“Where should we fork this repository?”* screen appears, click on your GitHub username (or other organizational account, if you are a member of any other organizations on GitHub).
+
+      c) The lesson will then be forked into a new copy of the repository under your username or your organizational account (it may take a minute or two for the copying to complete). Once it's done, click the green *“Clone or download”* button on the right side of the screen, and copy the url that pops up below:
 
       ![clone_or_download_url1](images/clone_or_download_url1.PNG)
 
       ![clone_or_download_url2](images/clone_or_download_url2.PNG)
 
       The url will end in *.git* and look something like this:
-         *<https://github.com/yourgithubusername/lessonname.git>*
+         https://github.com/yourgithubusername/lessonname.git
 
-      For example if your username was `daisieh` and you forked the `git-novice` lesson the url will be <https://github.com/daisieh/shell-novice.git>
+      For example, if your username was `daisieh` and you forked the `git-novice` lesson the url will be:
+
+        https://github.com/daisieh/shell-novice.git
 
       d) Open your terminal, navigate to a folder you want to keep your copy of the lesson in, and use `git clone` to copy the files from your repository on GitHub to your local computer:
 
       `git clone https://github.com/yourgithubusername/lessonname.git`
 
-      e) Lastly, you need to add the repository you forked from as a remote using the format `git remote add nameyouchooseforremote https://github.com/url/for/lesson`
+      e) Lastly, add the Carpentry repository you forked from as a remote using the format `git remote add nameyouchooseforremote https://github.com/url/for/lesson`
 
-      For example: `git remote add swcarpentry https://github.com/swcarpentry/shell-novice`
+      For example:
+        git remote add swcarpentry https://github.com/swcarpentry/shell-novice
 
       Confirm the new remote shows up with `git remote show`. You should see at least two names, including `origin` (or whatever your online repository is called) and the name of your remote, eg `swcarpentry`
 
       f) You’re all set up - go to step 4 to make your edits
 
-  -   If **YES**:
-
+  If **YES** (you have already forked the repository for this lesson):
       a) Confirm what remote repositories your local copy of the lesson can connect to:
 
-        `git remote show`
+      `git remote show`
 
-        - In the output, if you see two or more names, including `origin` (your repository online) and the name of the account you forked from, eg `swcarpentry`, go on to the next step.
+      - In the output, if you see two or more names, including `origin` (your repository online) and the name of the account you forked from, eg `swcarpentry`, go on to the next step.
 
-        - If you only see `origin`, you need to add the repository you forked from as a remote using `git remote add nameyouchooseforremote https://github.com/url/for/lesson `
+      - If you only see `origin`, you need to add the repository you forked from as a remote using `git remote add nameyouchooseforremote https://github.com/url/for/lesson `
 
-        For example, to add the *shell-novice* lesson as a remote named *swcarpentry*:
-        `git remote add swcarpentry https://github.com/swcarpentry/shell-novice`
+      For example, to add the *shell-novice* lesson as a remote named *swcarpentry*:
+            git remote add swcarpentry https://github.com/swcarpentry/shell-novice
 
-        Confirm the new remote shows up with `git remote show` and you're ready for the next step
+      Confirm the new remote shows up with `git remote show` and you're ready for the next step
 
-   b)  It’s best practice to make sure your copy of the lesson is up-to-date with the latest changes to the Carpentry version of the lesson, so the difference between your proposed changes and the existing lesson will only be the edits you’re about to make, and not include extra differences between older and newer versions of the lesson you’re editing. We’re going to use `git pull`, assuming you are ok to overwrite your current version of the lesson with the most recent version from the Carpentry repo:
+      b)  It’s best practice to make sure your copy of the lesson is up-to-date with the latest changes to the Carpentry version of the lesson, so the difference between your proposed changes and the existing lesson will only be the edits you’re about to make, and not include extra differences between older and newer versions of the lesson you’re editing. We’re going to use `git pull`, assuming you are ok to overwrite your current version of the lesson with the most recent version from the Carpentry repo:
 
-   `git pull`
+     `git pull`
 
-   c) Commit your update, using the `-m` flag to include a short  message explaining what changed inside quote marks:
+     c) Commit your update, using the `-m` flag to include a short  message explaining what changed inside quote marks:
 
-   ` git commit -m “updates from latest Carpentry lesson"`
+     ` git commit -m “updates from latest Carpentry lesson"`
 
-    d) Push your newly updated local copy of `gh-pages` back to your own remote repository too:
+     d) Push your newly updated local copy of `gh-pages` back to your own remote repository too:
 
-    `git push`
+      `git push`
 
-    Now you’re ready to start editing!
+      Now you’re ready to start editing!
 
-    Note: some open source projects refer to the main branch as `master` , so you may see this term used in other examples online, instead of `gh-pages`.
+     Note: some open source projects refer to the main branch as `master` , so you may see this term used in other examples online, instead of `gh-pages`.
 
 ### Making your edits
 
