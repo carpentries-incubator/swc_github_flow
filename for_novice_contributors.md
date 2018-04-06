@@ -66,7 +66,7 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 
     If **YES**:
 
-TODO: clean up indenting/numbering for this section
+    TODO: clean up indenting/numbering for this section
 
     a) If you just made the fork, go on to [Making Your Edits](TODO add link).
 
@@ -82,7 +82,7 @@ TODO: clean up indenting/numbering for this section
 
   ![alt text](images/compare.PNG "compare.PNG - compare button")
 
-    TODO: describe what to do after hitting "Compare" here
+  TODO: describe what to do after hitting "Compare" here
 
   -   If you see a message saying **there isn’t anything to compare**, such as -
 
