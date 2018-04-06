@@ -237,11 +237,11 @@ TODO - add a concluding note here and thank people for submitting feedback?
 
     `git commit -m “Fixed typos in solution” `
 
-  or
+    or
 
     `git add 03-create.md`
 
-    `git commit -m “Update 'Moving and Copying example'” `
+    `git commit -m “Update 'Moving and Copying example' ” `
 
 6. Staying on the same branch, push your local edited branch to your fork of the lesson on GitHub with `git push origin newbranchname`.
 
@@ -249,13 +249,13 @@ TODO - add a concluding note here and thank people for submitting feedback?
 
 7. Go back to your forked repository on GitHub in your internet browser, and navigate to your new branch using the dropdown menu under the **branch** button:
 
-  ![navigating_to_a_branch1](images/navigating_to_a_branch1.PNG)
+    ![navigating_to_a_branch1](images/navigating_to_a_branch1.PNG)
 
-  ![navigating_to_a_branch2](images/navigating_to_a_branch2.PNG)
+    ![navigating_to_a_branch2](images/navigating_to_a_branch2.PNG)
 
 8. Once on your new branch, press the green “Compare and Pull Request Button” on the right:
 
-  ![compare_and_pull_request](images/compare_and_pull_request.PNG)
+    ![compare_and_pull_request](images/compare_and_pull_request.PNG)
     *Example where the name of the most recently push branch is called 'contributing'*
 
 9. Add a short explanation of your suggested changes, then press *“Submit Pull Request”* at the bottom of the page.
