@@ -1,4 +1,4 @@
-## Instructions for contributing with git and GitHub
+## Instructions for contributing using graphical or command line interfaces using git and GitHub
 
 ### Prerequisites and other options
 -   Editing requires a GitHub account. You can set one up at <https://github.com>
@@ -152,39 +152,39 @@ TODO - add a concluding note here and thank people for submitting feedback?
 
 3.  Have you already forked the repository for this lesson?
 
-  If **NO** (you have not yet forked the repository for this lesson):
+    If **NO** (you have not yet forked the repository for this lesson):
 
-      a) Fork a copy of the lesson repository's  ```gh-pages``` branch into your account. Do this by selecting ```gh-pages``` on the dropdown option of branches on the left hand side of the repository's page, then clicking the *'Fork'* button on the upper right:
+    a) Fork a copy of the lesson repository's  ```gh-pages``` branch into your account. Do this by selecting ```gh-pages``` on the dropdown option of branches on the left hand side of the repository's page, then clicking the *'Fork'* button on the upper right:
 
-      ![alt text](images/gh_pages_button.PNG "gh_pages_button.PNG - location of branch menu and fork button")
+    ![alt text](images/gh_pages_button.PNG "gh_pages_button.PNG - location of branch menu and fork button")
 
-      b) When the *“Where should we fork this repository?”* screen appears, click on your GitHub username (or other organizational account, if you are a member of any other organizations on GitHub).
+    b) When the *“Where should we fork this repository?”* screen appears, click on your GitHub username (or other organizational account, if you are a member of any other organizations on GitHub).
 
-      c) The lesson will then be forked into a new copy of the repository under your username or your organizational account (it may take a minute or two for the copying to complete). Once it's done, click the green *“Clone or download”* button on the right side of the screen, and copy the url that pops up below:
+    c) The lesson will then be forked into a new copy of the repository under your username or your organizational account (it may take a minute or two for the copying to complete). Once it's done, click the green *“Clone or download”* button on the right side of the screen, and copy the url that pops up below:
 
-      ![clone_or_download_url1](images/clone_or_download_url1.PNG)
+    ![clone_or_download_url1](images/clone_or_download_url1.PNG)
 
-      ![clone_or_download_url2](images/clone_or_download_url2.PNG)
+    ![clone_or_download_url2](images/clone_or_download_url2.PNG)
 
-      The url will end in *.git* and look something like this:
+    The url will end in *.git* and look something like this:
          https://github.com/yourgithubusername/lessonname.git
 
-      For example, if your username was `daisieh` and you forked the `git-novice` lesson the url will be:
+    For example, if your username was `daisieh` and you forked the `git-novice` lesson the url will be:
 
         https://github.com/daisieh/shell-novice.git
 
-      d) Open your terminal, navigate to a folder you want to keep your copy of the lesson in, and use `git clone` to copy the files from your repository on GitHub to your local computer:
+    d) Open your terminal, navigate to a folder you want to keep your copy of the lesson in, and use `git clone` to copy the files from your repository on GitHub to your local computer:
 
       `git clone https://github.com/yourgithubusername/lessonname.git`
 
-      e) Lastly, add the Carpentry repository you forked from as a remote using the format `git remote add nameyouchooseforremote https://github.com/url/for/lesson`
+    e) Lastly, add the Carpentry repository you forked from as a remote using the format `git remote add nameyouchooseforremote https://github.com/url/for/lesson`
 
-      For example:
+    For example:
         git remote add swcarpentry https://github.com/swcarpentry/shell-novice
 
-      Confirm the new remote shows up with `git remote show`. You should see at least two names, including `origin` (or whatever your online repository is called) and the name of your remote, eg `swcarpentry`
+    Confirm the new remote shows up with `git remote show`. You should see at least two names, including `origin` (or whatever your online repository is called) and the name of your remote, eg `swcarpentry`
 
-      f) You’re all set up - go to step 4 to make your edits
+    f) You’re all set up - go to step 4 to make your edits
 
   If **YES** (you have already forked the repository for this lesson):
       a) Confirm what remote repositories your local copy of the lesson can connect to:
