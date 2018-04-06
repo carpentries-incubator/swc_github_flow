@@ -1,18 +1,18 @@
 ## Instructions for contributing with git and GitHub
 
-#### Prerequisites and other options
+### Prerequisites and other options
 -   Editing requires a GitHub account. You can set one up at <https://github.com>
 -   If you don’t want to use Github, you can suggest changes by emailing a lesson maintainer
     -   TODO add link to contact maintainers
 
 Note: The GitHub webpage interface works well for making relatively small edits, like adding a link, fixing typos, or adding several lines of explanation. For larger edits, the command line interface is recommended.
 
-#### Contents
+### Contents
 -   Option 1- Use a graphical interface (the GitHub webpage)
 -   Option 2- Use a command line interface with git
 
 
-#### Glossary of some version control vocabulary related to git and GitHub
+### Glossary of some version control vocabulary related to git and GitHub
 -   **For more details, see the Carpentry [git lesson reference page](http://swcarpentry.github.io/git-novice/reference/)**
 -   TODO - review definitions, figure out how much detail to include, potentially reorder
 -   *repository (short form: repo)*
@@ -38,7 +38,7 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 
 ## Option 1 - Use a graphical interface (the GitHub webpage)
 
-#### Getting Ready:
+### Getting Ready:
 
 1.  Identify the url and repository name for the lesson you want to make changes for, eg <https://github.com/swcarpentry/git-novice>. The base branch in all the Carpentry lessons is called **gh-pages**.
 
@@ -108,7 +108,7 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 
   The status should now be *“Merged”*, and your repository will be up to date with all the changes from the remote repository! Congrats, you are ready to start making your edits!
 
-#### Making your edits
+### Making your edits
 1.Create a new branch in your fork of the master repository for each significant change you wish to make. Do this by clicking on the *'Branch'* dropdown, and entering a new branch name in the *“Find or create a branch…”* dialog
 
 ![create_branch](images/create_branch.PNG)
@@ -133,7 +133,7 @@ Note that any additional changes you make on this branch later will also be adde
 
 ## Option 2 - Use a command line interface with git
 
-#### Getting ready
+### Getting ready
 
 1.Identify the url and repository name for the lesson you want to make changes for, eg <https://github.com/swcarpentry/git-novice>. The main branch in all the Carpentry lessons is called **gh-pages**.
 
@@ -203,7 +203,7 @@ Note that any additional changes you make on this branch later will also be adde
 
     Note: some open source projects refer to the main branch as `master` , so you may see this term used in other examples online, instead of `gh-pages`.
 
-#### Making your changes
+### Making your edits
 
 4.For each change or group of changes you want to make, start by making a new branch on your local copy of the repository with `git checkout -b newbranchname`. It’s helpful to give the branch a relevant  name eg:
 
