@@ -219,7 +219,7 @@ TODO - add a concluding note here and thank people for submitting feedback?
     Note: some open source projects refer to the main branch as `master` , so you may see this term used in other examples online, instead of `gh-pages` or the 'base' branch.
 
 ### Making your edits
-4.  For each change or group of changes you want to make, start by making a new branch on your local copy of the repository with `git checkout -b newbranchname`. It’s helpful to give the branch a relevant  name eg:
+4. For each change or group of changes you want to make, start by making a new branch on your local copy of the repository with `git checkout -b newbranchname`. It’s helpful to give the branch a relevant  name eg:
 
     `git checkout -b extraexamples`
 
@@ -229,7 +229,7 @@ TODO - add a concluding note here and thank people for submitting feedback?
 
     You can see a list of existing branches, and the branch you’re currently on with the command `git branch`
 
-5.  On your new branch, make your edits, and add then commit the changes in that branch.
+5. On your new branch, make your edits, and add then commit the changes in that branch.
 
     For example, if you edited a file called *03-create.md*, your adding and committing the file might look like:
 
@@ -243,30 +243,30 @@ TODO - add a concluding note here and thank people for submitting feedback?
 
     `git commit -m “Update 'Moving and Copying example'” `
 
-6.   Staying on the same branch, push your local edited branch to your fork of the lesson on GitHub with `git push origin newbranchname`.
+6. Staying on the same branch, push your local edited branch to your fork of the lesson on GitHub with `git push origin newbranchname`.
 
     For example: `git push origin extraexamples`
 
-7.   Go back to your forked repository on GitHub in your internet browser, and navigate to your new branch using the dropdown menu under the **branch** button:
+7. Go back to your forked repository on GitHub in your internet browser, and navigate to your new branch using the dropdown menu under the **branch** button:
 
   ![navigating_to_a_branch1](images/navigating_to_a_branch1.PNG)
 
   ![navigating_to_a_branch2](images/navigating_to_a_branch2.PNG)
 
-8.   Once on your new branch, press the green “Compare and Pull Request Button” on the right:
+8. Once on your new branch, press the green “Compare and Pull Request Button” on the right:
 
   ![compare_and_pull_request](images/compare_and_pull_request.PNG)
     *Example where the name of the most recently push branch is called 'contributing'*
 
-9.   Add a short explanation of your suggested changes, then press *“Submit Pull Request”* at the bottom of the page.
+9. Add a short explanation of your suggested changes, then press *“Submit Pull Request”* at the bottom of the page.
 It will be helpful if your description is more detailed than the commit message (eg you can explain why you changed something). People will be able to see the code you changed though, so you don’t have to repeat every single thing you changed.
 
-10.  Wait for feedback from the community on your pull request!
+10. Wait for feedback from the community on your pull request!
 
-11.  If you want to make additional changes (because you got feedback or think of related improvements), use the terminal to switch back to the branch on your local version that you made the previous edits on. The git command to return to a branch is `git checkout newbranchname`, e.g `git checkout extraexamples`.
+11. If you want to make additional changes (because you got feedback or think of related improvements), use the terminal to switch back to the branch on your local version that you made the previous edits on. The git command to return to a branch is `git checkout newbranchname`, e.g `git checkout extraexamples`.
 
     Then make your additional changes,  and commit and push them.
 
     When you look at the pull request on GitHub it will update automatically to include the new changes you've pushed.
 
-12.   TODO - add a concluding note here and thank people for submitting feedback?
+12. TODO - add a concluding note here and thank people for submitting feedback?
