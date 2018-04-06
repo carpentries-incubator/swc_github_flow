@@ -56,7 +56,7 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 
     If **NO** (you have not yet forked the repository for this lesson):
 
-    a) Fork a copy of the lesson repository's  ```gh-pages``` branch into your account . Do this by selecting ```gh-pages``` on the dropdown option of branches on the left hand side of the repository's page, then clicking the 'Fork' button in the upper right:
+    a) Fork a copy of the lesson repository's  ```gh-pages``` branch into your account. Do this by selecting ```gh-pages``` on the dropdown option of branches on the left hand side of the repository's page, then clicking the 'Fork' button in the upper right:
 
     ![alt text](images/gh_pages_button.PNG "gh_pages_button.PNG - location of branch menu and fork button")
 
@@ -68,44 +68,45 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 
 TODO: clean up indenting/numbering for this section
 
- -  If you just made the fork, go on to [Making Your Edits](TODO add link).
+    a) If you just made the fork, go on to [Making Your Edits](TODO add link).
 
--   If you made the fork a while ago, make sure it is up to date with the latest changes in the Carpentry lesson repository with these instructions before starting to edit .
+    b) If you made the fork a while ago, make sure it is up to date with the latest changes in the Carpentry lesson repository with these instructions before starting to edit
 
-1.Check the status of your repository - look if there is a message underneath the navigation bar, such as *"This branch is <#> commits behind ...*"
+    Check the status of your repository - look if there is a message underneath the navigation bar, such as *"This branch is <#> commits behind ...*"
 
-  ![alt text](images/repo_status.PNG "repo_status.PNG - repo with commits behind message")
+   ![alt text](images/repo_status.PNG "repo_status.PNG - repo with commits behind message")
 
-  -   If the message says that your branch is **even**, proceed to the [Making Your Edits](TODO add link) section.
+      -   If the message says that your branch is **even**, proceed to the [Making Your Edits](TODO add link) section.
 
-  -   If it says that your branch is **behind**,  click the grey *"Compare"* icon (below the green *"Clone or download"* button)  on the right:
+      -   If it says that your branch is **behind**,  click the grey *"Compare"* icon (below the green *"Clone or download"* button)  on the right:
 
-    ![alt text](images/compare.PNG "compare.PNG - compare button")
+      ![alt text](images/compare.PNG "compare.PNG - compare button")
 
-  -   If you see a message saying there isn’t anything to compare, such as -
+      TODO: describe what to do after hitting "Compare" here
+
+      -   If you see a message saying **there isn’t anything to compare**, such as -
 
      ![nothing_to_compare](images/nothing_to_compare.PNG)
 
-      That means that GitHub is comparing your c
+          That means that GitHub is comparing your changes with the master repository. In other words, everything that you have, the master has too. In order to make the opposite comparison - to see what the master has that you do not - click on the *“switching the base”* link.
 
-      hanges with the master repository. In other words, everything that you have, the master has also. In order to make the opposite comparison - to see what the master has that you do not - click on the *“switching the base”* link.
-
-      You should now see something similar to:
+          You should now see something similar to:
 
          ![comparing_changes](images/comparing_changes.PNG)
 
-      The base and head forks have now been switched, so the comparison is now between the changes in the master repository and yours.
+         The base and head forks have now been switched, so the comparison is now between the changes in the master repository and yours.
 
-      Click *“Create pull request”* - this is creating a pull request to you (for your repository) asking to pull changes from the master repository into your repository. Enter a title for the request and then click the green *"Create pull request"* button.
+         Click *“Create pull request”* - this is creating a pull request to you (for your repository) asking to pull changes from the master repository into your repository. Enter a title for the request and then click the green *"Create pull request"* button.
 
-      ![open_a_pull_request](images/open_a_pull_request.PNG)
+         ![open_a_pull_request](images/open_a_pull_request.PNG)
 
-      -   On the next screen click *“View pull request”* to view the pull request you just created for your repository. Towards the bottom of the screen, look for this message:
+         -   On the next screen click *“View pull request”* to view the pull request you just created for your repository. Towards the bottom of the screen, look for this message:
 
-      ![merge_pull_request](images/merge_pull_request.PNG)
+         ![merge_pull_request](images/merge_pull_request.PNG)
 
-      -   Click on *“Merge pull request”*, add any notes you want, then click *“Confirm merge”*.
-      -   The status should now be *“Merged”*, and your repository will be up to date with all the changes from the remote repository! Congrats, you are ready to start making your edits!
+         -   Click on *“Merge pull request”*, add any notes you want, then click *“Confirm merge”*.
+
+         -   The status should now be *“Merged”*, and your repository will be up to date with all the changes from the remote repository! Congrats, you are ready to start making your edits!
 
 #### Making your edits
 1.Create a new branch in your fork of the master repository for each significant change you wish to make. Do this by clicking on the *'Branch'* dropdown, and entering a new branch name in the *“Find or create a branch…”* dialog
