@@ -256,7 +256,7 @@ TODO - add a concluding note here and thank people for submitting feedback?
 8. Once on your new branch, press the green “Compare and Pull Request Button” on the right:
 
     ![compare_and_pull_request](images/compare_and_pull_request.PNG)
-    *Example where the name of the most recently push branch is called 'contributing'*
+    *Example where the name of the most recently pushed branch is called 'test-branch'*
 
 9. Add a short explanation of your suggested changes, then press *“Submit Pull Request”* at the bottom of the page.
 It will be helpful if your description is more detailed than the commit message (eg you can explain why you changed something). People will be able to see the code you changed though, so you don’t have to repeat every single thing you changed.
