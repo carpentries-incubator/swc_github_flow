@@ -1,18 +1,18 @@
 ## Instructions for contributing with git and GitHub
 
-##### Prerequisites and other options
+#### Prerequisites and other options
 -   Editing requires a GitHub account. You can set one up at <https://github.com>
 -   If you don’t want to use Github, you can suggest changes by emailing a lesson maintainer
     -   TODO add link to contact maintainers
 
 Note: The GitHub webpage interface works well for making relatively small edits, like adding a link, fixing typos, or adding several lines of explanation. For larger edits, the command line interface is recommended.
 
-##### Contents
+#### Contents
 -   Option 1- Use a graphical interface (the GitHub webpage)
 -   Option 2- Use a command line interface with git
 
 
-##### Glossary of some terms related to git and GitHub
+#### Glossary of some version control vocabulary related to git and GitHub
 -   **For more details, see the Carpentry [git lesson reference page](http://swcarpentry.github.io/git-novice/reference/)**
 -   TODO - review definitions, figure out how much detail to include, potentially reorder
 -   *repository (short form: repo)*
@@ -22,8 +22,8 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 -   *remote copy (also called upstream copy)*
     -   a version of a file stored outside of your own computer, for example stored on an external server
 -   *branch*
-    -   a *branch* is a named series of git commits. The default branch when you download a Carpentry lesson is called **gh-pages**. Creating a new branch makes a parallel version of a repository where changes can be made that affect the new branch only and not the original (base) version of the repository.  New branches are often used to test changes or new ideas, which can later be merged with the base branch. Moving from one branch to another is called *checking out* a new branch.
--   *gh-pages*
+    -   a *branch* is a named series of commits. The default branch when you download a Carpentry lesson is called **gh-pages**. Creating a new branch makes a parallel version of a repository where changes can be made that affect the new branch only and not the original (base) version of the repository.  New branches are often used to test changes or new ideas, which can later be merged with the base branch. Moving from one branch to another is called *checking out* a new branch.
+-   *gh-pages* (GitHub-specific term)
     - stands for "GitHub Pages". This is the name of the main branch in each of the Carpentry lesson material repositories. Branches called gh-pages can be published as webpages hosted by GitHub.
 -   *origin*
     -   a remote repository you want to download files from or compare local changes you have made to
@@ -31,26 +31,26 @@ Note: The GitHub webpage interface works well for making relatively small edits,
     -   send saved changes you have made on your local computer to a remote repository. For a change to show up on GitHub, the saved changes must be *pushed* from your computer to the remote repository.
 -   *pull*
     -   download saved changes from a remote repository to your local version of the same repository. This is useful when other people have made changes to a shared project, and you want to download (*pull*) the changes from the shared remote repository to your own computer.
--   *pull request*  
+-   *pull request* (GitHub-specific term)
     -   send proposed changes from a specific version of a repository back to the main version of a repository to be considered for incorporation by the people maintaining the repository (the maintainers)
 -   *fork* (GitHub-specific term)
     -   to copy a repository from another user and store it under your own account.
 
 ## Option 1 - Use a graphical interface (the GitHub webpage)
 
-##### Getting Ready:
+#### Getting Ready:
 
 1.  Identify the url and repository name for the lesson you want to make changes for, eg <https://github.com/swcarpentry/git-novice>. The base branch in all the Carpentry lessons is called **gh-pages**.
 
 2.  It’s not possible to for you to directly edit the version of the lesson in the Carpentry repository, so the overall idea of “GitHub Flow” is that you can submit edits by:
 
-  1) making your own copy of the lesson repository
+    1) making your own copy of the lesson repository
 
-  2) making a branch in your own copy
+    2) making a branch in your own copy
 
-  3) making the changes on that dedicated branch, and then
+    3) making the changes on that dedicated branch, and then
 
-  4) sending your proposed changes back to the Carpentry version of the repository by creating a **pull request**.
+    4) sending your proposed changes back to the Carpentry version of the repository by creating a **pull request**.
 
 3.  Have you already forked the repository for this lesson?
 
@@ -107,7 +107,7 @@ TODO: clean up indenting/numbering for this section
       -   Click on *“Merge pull request”*, add any notes you want, then click *“Confirm merge”*.
       -   The status should now be *“Merged”*, and your repository will be up to date with all the changes from the remote repository! Congrats, you are ready to start making your edits!
 
-##### Making your edits
+#### Making your edits
 1.Create a new branch in your fork of the master repository for each significant change you wish to make. Do this by clicking on the *'Branch'* dropdown, and entering a new branch name in the *“Find or create a branch…”* dialog
 
 ![create_branch](images/create_branch.PNG)
