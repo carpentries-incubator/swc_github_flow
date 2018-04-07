@@ -15,8 +15,9 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 
 
 ### Glossary of some version control vocabulary related to git and GitHub
--   **For more details, see the Carpentry [git lesson reference page](http://swcarpentry.github.io/git-novice/reference/)**
--   TODO - review definitions, figure out how much detail to include, potentially reorder
+
+For more details, see the Carpentry [git lesson reference page](http://swcarpentry.github.io/git-novice/reference/)
+
 -   *repository (short form: repo)*
     -   a storage area for a project containing all the files for the project and the history of all the changes made to those files
 -   *local copy*
@@ -26,7 +27,7 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 -   *branch*
     -   a *branch* is a named series of commits. The default branch when you download a Carpentry lesson is called **gh-pages**. Creating a new branch makes a parallel version of a repository where changes can be made that affect the new branch only and not the original (base) version of the repository.  New branches are often used to test changes or new ideas, which can later be merged with the base branch. Moving from one branch to another is called *checking out* a new branch.
 -   *fork* (GitHub-specific term)
-    -   to copy a repository from another user and store it under your own Github account. Can also refer to the copied repo itself. 
+    -   to copy a repository from another user and store it under your own Github account. Can also refer to the copied repo itself.
 -   *gh-pages* (GitHub-specific term)
     - stands for "GitHub Pages". This is the name of the main branch in each of the Carpentry lesson material repositories. Branches called gh-pages can be published as webpages hosted by GitHub.
 -   *origin*
@@ -169,10 +170,13 @@ TODO - add a concluding note here and thank people for submitting feedback?
 
       `git clone https://github.com/yourgithubusername/lessonname.git`
 
-    e) Lastly, add the Carpentry repository you forked from as a remote using the format `git remote add upstream https://github.com/url/for/lesson`
+    e) Lastly, add the Carpentry repository you forked from as a remote using the format `git remote add upstream https://github.com/url/for/lesson`.
 
     For example:
-        git remote add upstream https://github.com/swcarpentry/shell-novice
+
+      `git remote add upstream https://github.com/swcarpentry/shell-novice`  
+
+    Note using `upstream` is a convention, not a git command, you could name the remote repository something else by replacing `upstream` with another name you choose.
 
     Confirm the new remote shows up with `git remote show`. You should see at least two names, including `origin` (which should point to your fork of the online repository) and the name of your remote, eg `upstream`.
 
@@ -190,24 +194,24 @@ TODO - add a concluding note here and thank people for submitting feedback?
       - If you only see `origin`, you need to add the repository you forked from as a remote using `git remote add upstream https://github.com/url/for/lesson `
 
       For example, to add the *shell-novice* lesson as a remote named *upstream*:
-            git remote add upstream https://github.com/swcarpentry/shell-novice
+            `git remote add upstream https://github.com/swcarpentry/shell-novice`
 
       Confirm the new remote shows up with `git remote show` and you're ready for the next step.
 
-    b) It’s best practice to make sure your copy of the lesson is up-to-date with the latest changes to the Carpentry version of the lesson, so the difference between your proposed changes and the existing lesson will only be the edits you’re about to make, and not include extra differences between older and newer versions of the lesson you’re editing. 
-    
+    b) It’s best practice to make sure your copy of the lesson is up-to-date with the latest changes to the Carpentry version of the lesson, so the difference between your proposed changes and the existing lesson will only be the edits you’re about to make, and not include extra differences between older and newer versions of the lesson you’re editing.
+
     c) Make sure you're on the main branch, `gh-pages`, in your local copy:
-    
+
     `git checkout gh-pages`
-    
+
     d) Make sure your copy of `gh-pages` doesn't have any uncommitted changes:
-    
+
     `git status`
-    
+
     If it has changes that you're willing to overwrite, reset the branch:
-    
+
     `git reset --hard`
-    
+
     e) Now we’re going to use `git pull` to overwrite your current version of the lesson with the most recent version from the Carpentry repo:
 
      `git pull upstream gh-pages`
