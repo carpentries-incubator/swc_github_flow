@@ -110,27 +110,27 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 
 ### Making your edits
 
-1.Create a new branch in your fork of the base repository. It's best practice to make each significant change in a separate fork so each significant change can be submitted as a separate pull request. Create a new branch by clicking on the *'Branch'* dropdown, and entering a new branch name in the *“Find or create a branch…”* dialog
+1. Create a new branch in your fork of the base repository. It's best practice to make each significant change in a separate fork so each significant change can be submitted as a separate pull request. Create a new branch by clicking on the *'Branch'* dropdown, and entering a new branch name in the *“Find or create a branch…”* dialog
 
 ![alt text](images/create_branch.PNG "create_branch.PNG - dropdown showing how to create a branch on the graphical interface")
 
  Click the blue *“create branch”* button and this will create a copy of whatever branch you have selected in the drop-down (in this case, `gh-pages`) into a new branch named whatever you enter for the name.
 
-2.Make your changes to files in the branch you just created. Since you are making changes in a branch you just created, select *“Commit directly”* and then click *“Commit changes”*:
+2. Make your changes to files in the branch you just created. Since you are making changes in a branch you just created, select *“Commit directly”* and then click *“Commit changes”*:
 
   ![alt text](images/commit_changes.PNG "commit_changes.PNG")
 
-3.You’ll now see that your new branch with the edits will be a commit ahead of the base branch - click on *“Pull request”* to open the Pull Request submission screen to submit those changes to the master repository for consideration:
+3. You’ll now see that your new branch with the edits will be a commit ahead of the base branch - click on *“Pull request”* to open the Pull Request submission screen to submit those changes to the master repository for consideration:
 
 ![alt text](images/pull_request_button.PNG "pull_request_button.PNG")
 
-4.Add a short explanation of your suggested changes, then press *“Submit Pull Request”* at the bottom of the page. It will be helpful if your description is more detailed than the commit message (eg you can explain why you changed something). People will be able to see the code you changed though, so you don’t have to repeat every single thing you changed.
+4. Add a short explanation of your suggested changes, then press *“Submit Pull Request”* at the bottom of the page. It will be helpful if your description is more detailed than the commit message (eg you can explain why you changed something). People will be able to see the code you changed though, so you don’t have to repeat every single thing you changed.
 
 If you make more changes to this branch after making the pull request, those changes will automatically get added to the existing pull request, as long as the pull request hasn't been closed.
 
-5.Wait for feedback from the community on your Pull Request!
+5. Wait for feedback from the community on your Pull Request!
 
-6.If you receive feedback, make the changes on GitHub and the pull request will update automatically.
+6. If you receive feedback, make the changes on GitHub and the pull request will update automatically.
 
 TODO - add a concluding note here and thank people for submitting feedback?
 
