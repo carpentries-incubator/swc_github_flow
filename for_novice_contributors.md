@@ -9,7 +9,7 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 
 ### Contents
 -   Glossary of terms
--   Making lesson changes with Github
+-   Making lesson changes with GitHub
 -   Option 1- Use a graphical interface (the GitHub webpage)
 -   Option 2- Use a command line interface with git
 
@@ -30,7 +30,7 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 -   *gh-pages* (GitHub-specific term)
     - stands for "GitHub Pages". This is the name of the main branch in each of the Carpentry lesson material repositories. Branches called gh-pages can be published as webpages hosted by GitHub.
 -   *origin*
-    -   the main remote repository you want to download files from or compare local changes you have made to. When you've forked a repo, your copy in your account is your origin. 
+    -   the main remote repository you want to download files from or compare local changes you have made to. When you've forked a repo, your *origin* is your new copy of the repository in your account.
 -   *upstream*
     -   the original repository you made your fork from. Both *origin* and *upstream* are remote repositories.
 -   *commit*
