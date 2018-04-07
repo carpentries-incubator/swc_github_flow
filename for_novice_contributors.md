@@ -38,7 +38,7 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 -   *fork* (GitHub-specific term)
     -   to copy a repository from another user and store it under your own account.
 
-## Making lesson changes with Github:
+## Making lesson changes with Github
 
 1.  Identify the url and repository name for the lesson you want to make changes for, eg <https://github.com/swcarpentry/git-novice>. The base branch in all the Carpentry lessons is called **gh-pages**.
 
