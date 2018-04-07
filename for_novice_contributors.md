@@ -20,7 +20,7 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 -   *local copy*
     -   the version of file stored on your own computer
 -   *remote copy*
-    -   the version of a file stored outside of your own computer, for example stored on an external server, perhaps at Github
+    -   the version of a file stored outside of your own computer, for example stored on an external server, perhaps at Github. Remotes are referenced by nicknames, e.g. *origin* or *upstream*.
 -   *branch*
     -   a *branch* is a named series of commits. The default branch when you download a Carpentry lesson is called **gh-pages**. Creating a new branch makes a parallel version of a repository where changes can be made that affect the new branch only and not the original (base) version of the repository.  New branches are often used to test changes or new ideas, which can later be merged with the base branch. Moving from one branch to another is called *checking out* a new branch.
 -   *fork* (GitHub-specific term)
