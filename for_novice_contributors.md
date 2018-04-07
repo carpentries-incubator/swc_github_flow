@@ -73,9 +73,7 @@ For more details, see the Carpentry [git lesson reference page](http://swcarpent
 
     If **YES**:
 
-    TODO: clean up indenting/numbering for this section
-
-    a) If you just made the fork, go on to [Making Your Edits](TODO add link).
+    a) If you just made the fork, go on to the Making Your Edits section below.
 
     b) If you made the fork a while ago, make sure it is up to date with the latest changes in the Carpentry lesson repository with these instructions before starting to edit:
 
@@ -83,7 +81,7 @@ For more details, see the Carpentry [git lesson reference page](http://swcarpent
 
    ![alt text](images/repo_status.PNG "repo_status.PNG - repo with commits behind message")
 
-  -   If the message says that your branch is **even**, proceed to the [Making Your Edits](TODO add link) section.
+  -   If the message says that your branch is **even**, proceed to the Making Your Edits section below.
 
   -   If it says that your branch is **behind**,  click the grey *"Compare"* icon (below the green *"Clone or download"* button)  on the right:
 
@@ -95,7 +93,7 @@ For more details, see the Carpentry [git lesson reference page](http://swcarpent
 
   ![alt text](images/nothing_to_compare.PNG "nothing_to_compare.PNG - example of when you need to switch the base for comparison")
 
-  That means that GitHub is comparing your changes with the master repository. In other words, everything that you have, the master has too. In order to make the opposite comparison - to see what the master has that you do not - click on the *“switching the base”* link.
+  That means that GitHub is comparing your changes with the master repository. In other words, everything that you have, the master has too. In order to make the opposite comparison - to see what the master has that you do not - click on the *“switching the base”* link. TODO - improve wording.
 
   You should now see something similar to:
 
@@ -139,7 +137,7 @@ If you make more changes to this branch after making the pull request, those cha
 
 6. If you receive feedback, make the changes on GitHub and the pull request will update automatically.
 
-TODO - add a concluding note here and thank people for submitting feedback?
+7. Congrats on completing the tutorial and thank you for taking the time to submit suggestions to this open-source lesson material! You can use this process of creating a branch with specific edits and submitting it as a pull request for review to contribute to other projects too, keeping in mind the repository names and organization will probably be different between projects. 
 
 ## Option 2 - Use a command line interface with git
 
@@ -279,4 +277,4 @@ It will be helpful if your description is more detailed than the commit message 
 
     When you look at the pull request on GitHub it will update automatically to include the new changes you've pushed.
 
-12. TODO - add a concluding note here and thank people for submitting feedback?
+12. Congrats on completing the tutorial and thank you for taking the time to submit suggestions to this open-source lesson material! You can use this process of creating a branch with specific edits and submitting it as a pull request for review to contribute to other projects too, keeping in mind the repository names and organization will probably be different between projects.
