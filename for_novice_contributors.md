@@ -8,6 +8,8 @@
 Note: The GitHub webpage interface works well for making relatively small edits, like adding a link, fixing typos, or adding several lines of explanation. For larger edits, the command line interface is recommended.
 
 ### Contents
+-   Glossary of terms
+-   Making lesson changes with Github
 -   Option 1- Use a graphical interface (the GitHub webpage)
 -   Option 2- Use a command line interface with git
 
@@ -36,9 +38,7 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 -   *fork* (GitHub-specific term)
     -   to copy a repository from another user and store it under your own account.
 
-## Option 1 - Use a graphical interface (the GitHub webpage)
-
-### Getting Ready:
+## Making lesson changes with Github
 
 1.  Identify the url and repository name for the lesson you want to make changes for, eg <https://github.com/swcarpentry/git-novice>. The base branch in all the Carpentry lessons is called **gh-pages**.
 
@@ -51,6 +51,8 @@ Note: The GitHub webpage interface works well for making relatively small edits,
     3) making the changes on that dedicated branch, and then
 
     4) sending your proposed changes back to the Carpentry version of the repository by creating a **pull request**.
+
+## Option 1 - Use a graphical interface (the GitHub webpage)
 
 3.  Have you already forked the repository for this lesson?
 
@@ -135,20 +137,6 @@ If you make more changes to this branch after making the pull request, those cha
 TODO - add a concluding note here and thank people for submitting feedback?
 
 ## Option 2 - Use a command line interface with git
-
-### Getting ready
-
-1.  Identify the url and repository name for the lesson you want to make changes for, eg <https://github.com/swcarpentry/git-novice>. The main branch in all the Carpentry lessons is called **gh-pages**.
-
-2.  It’s not possible to for you to directly edit the version of the lesson in the Carpentry repository, so the overall idea of “GitHub Flow” is that you can submit edits by:
-
-    i) making your own copy of the lesson repository
-
-    ii) making a branch in your own copy
-
-    iii) making the changes on that dedicated branch, and then
-
-    iv) sending your proposed changes back to the Carpentry version of the repository by creating a **pull request**.
 
 3.  Have you already forked the repository for this lesson?
 
