@@ -177,12 +177,12 @@ TODO - add a concluding note here and thank people for submitting feedback?
 
       `git clone https://github.com/yourgithubusername/lessonname.git`
 
-    e) Lastly, add the Carpentry repository you forked from as a remote using the format `git remote add nameyouchooseforremote https://github.com/url/for/lesson`
+    e) Lastly, add the Carpentry repository you forked from as a remote using the format `git remote add upstream https://github.com/url/for/lesson`
 
     For example:
-        git remote add swcarpentry https://github.com/swcarpentry/shell-novice
+        git remote add upstream https://github.com/swcarpentry/shell-novice
 
-    Confirm the new remote shows up with `git remote show`. You should see at least two names, including `origin` (or whatever your online repository is called) and the name of your remote, eg `swcarpentry`
+    Confirm the new remote shows up with `git remote show`. You should see at least two names, including `origin` (which should point to your fork of the online repository) and the name of your remote, eg `upstream`.
 
     f) You’re all set up - go to step 4 to make your edits
 
@@ -193,41 +193,55 @@ TODO - add a concluding note here and thank people for submitting feedback?
 
       `git remote show`
 
-      - In the output, if you see two or more names, including `origin` (your repository online) and the name of the account you forked from, eg `swcarpentry`, go on to the next step.
+      - In the output, if you see two or more names, including `origin` (your repository online), and either the name of the account you forked from, eg `swcarpentry`, or `upstream`, referring to the account you forked from, go on to the next step.
 
-      - If you only see `origin`, you need to add the repository you forked from as a remote using `git remote add nameyouchooseforremote https://github.com/url/for/lesson `
+      - If you only see `origin`, you need to add the repository you forked from as a remote using `git remote add upstream https://github.com/url/for/lesson `
 
-      For example, to add the *shell-novice* lesson as a remote named *swcarpentry*:
-            git remote add swcarpentry https://github.com/swcarpentry/shell-novice
+      For example, to add the *shell-novice* lesson as a remote named *upstream*:
+            git remote add upstream https://github.com/swcarpentry/shell-novice
 
-      Confirm the new remote shows up with `git remote show` and you're ready for the next step
+      Confirm the new remote shows up with `git remote show` and you're ready for the next step.
 
-    b)  It’s best practice to make sure your copy of the lesson is up-to-date with the latest changes to the Carpentry version of the lesson, so the difference between your proposed changes and the existing lesson will only be the edits you’re about to make, and not include extra differences between older and newer versions of the lesson you’re editing. We’re going to use `git pull`, assuming you are ok to overwrite your current version of the lesson with the most recent version from the Carpentry repo:
+    b) It’s best practice to make sure your copy of the lesson is up-to-date with the latest changes to the Carpentry version of the lesson, so the difference between your proposed changes and the existing lesson will only be the edits you’re about to make, and not include extra differences between older and newer versions of the lesson you’re editing. 
+    
+    c) Make sure you're on the main branch, `gh-pages`, in your local copy:
+    
+    `git checkout gh-pages`
+    
+    d) Make sure your copy of `gh-pages` doesn't have any uncommitted changes:
+    
+    `git status`
+    
+    If it has changes that you're willing to overwrite, reset the branch:
+    
+    `git reset --hard`
+    
+    e) Now we’re going to use `git pull` to overwrite your current version of the lesson with the most recent version from the Carpentry repo:
 
-     `git pull`
+     `git pull upstream gh-pages`
 
-    c) Commit your update, using the `-m` flag to include a short  message explaining what changed inside quote marks:
+    f) Commit your update, using the `-m` flag to include a short message explaining what changed inside quote marks:
 
-     ` git commit -m “updates from latest Carpentry lesson"`
+     ` git commit -m "updates from latest Carpentry lesson"`
 
-    d) Push your newly updated local copy of `gh-pages` back to your own remote repository too:
+    g) Push your newly updated local copy of `gh-pages` back to your own remote repository too:
 
       `git push`
 
     Now you’re ready to start editing with step 4 below!
 
-    Note: some open source projects refer to the main branch as `master` , so you may see this term used in other examples online, instead of `gh-pages` or the 'base' branch.
+    Note: some open source projects refer to the main branch as `master`, so you may see this term used in other examples online, instead of `gh-pages` or the 'base' branch.
 
 ### Making your edits
-4. For each change or group of changes you want to make, start by making a new branch on your local copy of the repository with `git checkout -b newbranchname`. It’s helpful to give the branch a relevant  name eg:
+4. For each change or group of changes you want to make, start by making a new branch on your local copy of `gh-pages` with `git checkout -b newbranchname gh-pages`. It’s helpful to give the branch a relevant name eg:
 
-    `git checkout -b extraexamples`
+    `git checkout -b extraexamples gh-pages`
 
     or
 
-    `git checkout -b fixtypo`
+    `git checkout -b fixtypo gh-pages`
 
-    You can see a list of existing branches, and the branch you’re currently on with the command `git branch`
+    You can see a list of existing branches and the branch you’re currently on with the command `git branch`
 
 5. On your new branch, make your edits, and add then commit the changes in that branch.
 
@@ -263,9 +277,9 @@ It will be helpful if your description is more detailed than the commit message 
 
 10. Wait for feedback from the community on your pull request!
 
-11. If you want to make additional changes (because you got feedback or think of related improvements), use the terminal to switch back to the branch on your local version that you made the previous edits on. The git command to return to a branch is `git checkout newbranchname`, e.g `git checkout extraexamples`.
+11. If you want to make additional changes (because you got feedback or think of related improvements), use the terminal to switch back to the branch on your local version that you made the previous edits on. You can see the name of the pull request's branch at the top of the pull request. The git command to return to a branch is `git checkout newbranchname`, e.g `git checkout extraexamples`.
 
-    Then make your additional changes,  and commit and push them.
+    Then make your additional changes, and commit and push them.
 
     When you look at the pull request on GitHub it will update automatically to include the new changes you've pushed.
 
