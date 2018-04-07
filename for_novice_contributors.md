@@ -8,6 +8,8 @@
 Note: The GitHub webpage interface works well for making relatively small edits, like adding a link, fixing typos, or adding several lines of explanation. For larger edits, the command line interface is recommended.
 
 ### Contents
+-   Glossary of terms
+-   Making lesson changes with GitHub
 -   Option 1- Use a graphical interface (the GitHub webpage)
 -   Option 2- Use a command line interface with git
 
@@ -18,27 +20,29 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 -   *repository (short form: repo)*
     -   a storage area for a project containing all the files for the project and the history of all the changes made to those files
 -   *local copy*
-    -   a version of file stored on your own computer
--   *remote copy (also called upstream copy)*
-    -   a version of a file stored outside of your own computer, for example stored on an external server
+    -   the version of file stored on your own computer
+-   *remote copy*
+    -   the version of a file stored outside of your own computer, for example stored on an external server, perhaps at Github. Remotes are referenced by nicknames, e.g. *origin* or *upstream*.
 -   *branch*
     -   a *branch* is a named series of commits. The default branch when you download a Carpentry lesson is called **gh-pages**. Creating a new branch makes a parallel version of a repository where changes can be made that affect the new branch only and not the original (base) version of the repository.  New branches are often used to test changes or new ideas, which can later be merged with the base branch. Moving from one branch to another is called *checking out* a new branch.
+-   *fork* (GitHub-specific term)
+    -   to copy a repository from another user and store it under your own Github account. Can also refer to the copied repo itself. 
 -   *gh-pages* (GitHub-specific term)
     - stands for "GitHub Pages". This is the name of the main branch in each of the Carpentry lesson material repositories. Branches called gh-pages can be published as webpages hosted by GitHub.
 -   *origin*
-    -   a remote repository you want to download files from or compare local changes you have made to
+    -   the main remote repository you want to download files from or compare local changes you have made to. When you've forked a repo, your *origin* is your new copy of the repository in your account.
+-   *upstream*
+    -   the original repository you made your fork from. Both *origin* and *upstream* are remote repositories.
+-   *commit*
+    -   save changes in your working directory to your local repository.
 -   *push*
-    -   send saved changes you have made on your local computer to a remote repository. For a change to show up on GitHub, the saved changes must be *pushed* from your computer to the remote repository.
+    -   send committed changes you have made on your local computer to a remote repository. For a change to show up on GitHub, the committed changes must be *pushed* from your computer to the remote repository.
 -   *pull*
-    -   download saved changes from a remote repository to your local version of the same repository. This is useful when other people have made changes to a shared project, and you want to download (*pull*) the changes from the shared remote repository to your own computer.
+    -   download changes from a remote repository to your local version of the same repository. This is useful when other people have made changes to a shared project, and you want to download (*pull*) the changes from the shared remote repository to your own computer.
 -   *pull request* (GitHub-specific term)
-    -   send proposed changes from a specific version of a repository back to the main version of a repository to be considered for incorporation by the people maintaining the repository (the maintainers)
--   *fork* (GitHub-specific term)
-    -   to copy a repository from another user and store it under your own account.
+    -   send proposed changes from a specific version of a repository back to the main version of a repository to be considered for incorporation by the people maintaining the repository (the maintainers). You are *requesting* that the maintainers *pull* your changes into their repository.
 
-## Option 1 - Use a graphical interface (the GitHub webpage)
-
-### Getting Ready:
+## Making lesson changes with Github
 
 1.  Identify the url and repository name for the lesson you want to make changes for, eg <https://github.com/swcarpentry/git-novice>. The base branch in all the Carpentry lessons is called **gh-pages**.
 
@@ -51,6 +55,8 @@ Note: The GitHub webpage interface works well for making relatively small edits,
     3) making the changes on that dedicated branch, and then
 
     4) sending your proposed changes back to the Carpentry version of the repository by creating a **pull request**.
+
+## Option 1 - Use a graphical interface (the GitHub webpage)
 
 3.  Have you already forked the repository for this lesson?
 
@@ -110,45 +116,31 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 
 ### Making your edits
 
-1.Create a new branch in your fork of the base repository. It's best practice to make each significant change in a separate fork so each significant change can be submitted as a separate pull request. Create a new branch by clicking on the *'Branch'* dropdown, and entering a new branch name in the *“Find or create a branch…”* dialog
+1. Create a new branch in your fork of the base repository. It's best practice to make each significant change in a separate fork so each significant change can be submitted as a separate pull request. Create a new branch by clicking on the *'Branch'* dropdown, and entering a new branch name in the *“Find or create a branch…”* dialog
 
 ![alt text](images/create_branch.PNG "create_branch.PNG - dropdown showing how to create a branch on the graphical interface")
 
  Click the blue *“create branch”* button and this will create a copy of whatever branch you have selected in the drop-down (in this case, `gh-pages`) into a new branch named whatever you enter for the name.
 
-2.Make your changes to files in the branch you just created. Since you are making changes in a branch you just created, select *“Commit directly”* and then click *“Commit changes”*:
+2. Make your changes to files in the branch you just created. Since you are making changes in a branch you just created, select *“Commit directly”* and then click *“Commit changes”*:
 
   ![alt text](images/commit_changes.PNG "commit_changes.PNG")
 
-3.You’ll now see that your new branch with the edits will be a commit ahead of the base branch - click on *“Pull request”* to open the Pull Request submission screen to submit those changes to the master repository for consideration:
+3. You’ll now see that your new branch with the edits will be a commit ahead of the base branch - click on *“Pull request”* to open the Pull Request submission screen to submit those changes to the master repository for consideration:
 
 ![alt text](images/pull_request_button.PNG "pull_request_button.PNG")
 
-4.Add a short explanation of your suggested changes, then press *“Submit Pull Request”* at the bottom of the page. It will be helpful if your description is more detailed than the commit message (eg you can explain why you changed something). People will be able to see the code you changed though, so you don’t have to repeat every single thing you changed.
+4. Add a short explanation of your suggested changes, then press *“Submit Pull Request”* at the bottom of the page. It will be helpful if your description is more detailed than the commit message (eg you can explain why you changed something). People will be able to see the code you changed though, so you don’t have to repeat every single thing you changed.
 
 If you make more changes to this branch after making the pull request, those changes will automatically get added to the existing pull request, as long as the pull request hasn't been closed.
 
-5.Wait for feedback from the community on your Pull Request!
+5. Wait for feedback from the community on your Pull Request!
 
-6.If you receive feedback, make the changes on GitHub and the pull request will update automatically.
+6. If you receive feedback, make the changes on GitHub and the pull request will update automatically.
 
 TODO - add a concluding note here and thank people for submitting feedback?
 
 ## Option 2 - Use a command line interface with git
-
-### Getting ready
-
-1.  Identify the url and repository name for the lesson you want to make changes for, eg <https://github.com/swcarpentry/git-novice>. The main branch in all the Carpentry lessons is called **gh-pages**.
-
-2.  It’s not possible to for you to directly edit the version of the lesson in the Carpentry repository, so the overall idea of “GitHub Flow” is that you can submit edits by:
-
-    i) making your own copy of the lesson repository
-
-    ii) making a branch in your own copy
-
-    iii) making the changes on that dedicated branch, and then
-
-    iv) sending your proposed changes back to the Carpentry version of the repository by creating a **pull request**.
 
 3.  Have you already forked the repository for this lesson?
 
