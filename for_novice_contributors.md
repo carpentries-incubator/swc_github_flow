@@ -2,7 +2,7 @@
 
 ### Prerequisites and other options
 -   Editing requires a GitHub account. You can set one up at <https://github.com>
--   If you don’t want to use Github, you can suggest changes by specifying the lesson in the email title and emailing them to checkout@carpentries.org
+-   If you don’t want to use GitHub, you can suggest changes by specifying the lesson in the email title and emailing them to checkout@carpentries.org
 
 Note: The GitHub webpage interface works well for making relatively small edits, like adding a link, fixing typos, or adding several lines of explanation. For larger edits, the command line interface is recommended.
 
@@ -22,11 +22,11 @@ For more details, see the Carpentry [git lesson reference page](http://swcarpent
 -   *local copy*
     -   the version of file stored on your own computer
 -   *remote copy*
-    -   the version of a file stored outside of your own computer, for example stored on an external server, perhaps at Github. Remotes are referenced by nicknames, e.g. *origin* or *upstream*.
+    -   the version of a file stored outside of your own computer, for example stored on an external server, perhaps at GitHub. Remotes are referenced by nicknames, e.g. *origin* or *upstream*.
 -   *branch*
     -   a *branch* is a named series of commits. The default branch when you download a Carpentry lesson is called **gh-pages**. Creating a new branch makes a parallel version of a repository where changes can be made that affect the new branch only and not the original (base) version of the repository.  New branches are often used to test changes or new ideas, which can later be merged with the base branch. Moving from one branch to another is called *checking out* a new branch.
 -   *fork* (GitHub-specific term)
-    -   to copy a repository from another user and store it under your own Github account. Can also refer to the copied repo itself.
+    -   to copy a repository from another user and store it under your own GitHub account. Can also refer to the copied repo itself.
 -   *gh-pages* (GitHub-specific term)
     - stands for "GitHub Pages". This is the name of the main branch in each of the Carpentry lesson material repositories. Branches called gh-pages can be published as webpages hosted by GitHub.
 -   *origin*
