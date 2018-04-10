@@ -270,10 +270,18 @@ It will be helpful if your description is more detailed than the commit message 
 
 10. Wait for feedback from the community on your pull request!
 
-11. If you want to make additional changes (because you got feedback or think of related improvements), use the terminal to switch back to the branch on your local version that you made the previous edits on. You can see the name of the pull request's branch at the top of the pull request. The git command to return to a branch is `git checkout newbranchname`, e.g `git checkout extraexamples`.
+11. As long as the pull request is open (it has not been merged or closed) you can add additional changes, for example if you got feedback or think of related improvements. To do this, use the terminal to switch back to the branch on your local version that you made the previous edits on. You can see the name of the pull request's branch at the top of the pull request. The git command to return to a branch is `git checkout newbranchname`, e.g `git checkout extraexamples`.
 
-    Then make your additional changes, and commit and push them.
+  Then make your additional changes, and commit and push them with `git push`, eg:  
 
-    When you look at the pull request on GitHub it will update automatically to include the new changes you've pushed.
+    `git add file_you_edited.md`
+
+    `git commit -m "made additional improvement XYZ"`
+
+    `git push`
+
+    You do **not** need to repeat `git push origin branchname` (this will re-push the branch).
+
+    When you look at the pull request on GitHub it will update automatically to add the new commits you've pushed to the existing pull request from this branch.
 
 12. Congrats on completing the tutorial and thank you for taking the time to submit suggestions to this open-source lesson material! You can use this process of creating a branch with specific edits and submitting it as a pull request for review to contribute to other projects too (including improving this document), keeping in mind the repository names and organization will probably be different between projects.
