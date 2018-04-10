@@ -136,7 +136,7 @@ If you make more changes to this branch after making the pull request, those cha
 
 6. If you receive feedback, make the changes on GitHub and the pull request will update automatically.
 
-7. Congrats on completing the tutorial and thank you for taking the time to submit suggestions to this open-source lesson material! You can use this process of creating a branch with specific edits and submitting it as a pull request for review to contribute to other projects too, keeping in mind the repository names and organization will probably be different between projects.
+7. Congrats on completing the tutorial and thank you for taking the time to submit suggestions to this open-source lesson material! You can use this process of creating a branch with specific edits and submitting it as a pull request for review to contribute to other projects too (including improving this document), keeping in mind the repository names and organization will probably be different between projects.
 
 ## Option 2 - Use a command line interface with git
 
@@ -276,4 +276,4 @@ It will be helpful if your description is more detailed than the commit message 
 
     When you look at the pull request on GitHub it will update automatically to include the new changes you've pushed.
 
-12. Congrats on completing the tutorial and thank you for taking the time to submit suggestions to this open-source lesson material! You can use this process of creating a branch with specific edits and submitting it as a pull request for review to contribute to other projects too, keeping in mind the repository names and organization will probably be different between projects.
+12. Congrats on completing the tutorial and thank you for taking the time to submit suggestions to this open-source lesson material! You can use this process of creating a branch with specific edits and submitting it as a pull request for review to contribute to other projects too (including improving this document), keeping in mind the repository names and organization will probably be different between projects.
