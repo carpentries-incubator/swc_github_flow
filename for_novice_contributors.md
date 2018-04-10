@@ -1,9 +1,8 @@
-## Instructions for contributing using graphical or command line interfaces using git and GitHub
+## Instructions for contributing to The Carpentries' lesson materials using graphical or command line interfaces with git and GitHub
 
 ### Prerequisites and other options
 -   Editing requires a GitHub account. You can set one up at <https://github.com>
--   If you don’t want to use Github, you can suggest changes by emailing a lesson maintainer
-    -   TODO add link to contact maintainers
+-   If you don’t want to use Github, you can suggest changes by specifying the lesson in the email title and emailing them to checkout@carpentries.org
 
 Note: The GitHub webpage interface works well for making relatively small edits, like adding a link, fixing typos, or adding several lines of explanation. For larger edits, the command line interface is recommended.
 
@@ -40,10 +39,10 @@ For more details, see the Carpentry [git lesson reference page](http://swcarpent
     -   send committed changes you have made on your local computer to a remote repository. For a change to show up on GitHub, the committed changes must be *pushed* from your computer to the remote repository.
 -   *pull*
     -   download changes from a remote repository to your local version of the same repository. This is useful when other people have made changes to a shared project, and you want to download (*pull*) the changes from the shared remote repository to your own computer.
--   *pull request* (GitHub-specific term)
+-   *pull request* (GitHub-specific term, abbreviated as 'PR')
     -   send proposed changes from a specific version of a repository back to the main version of a repository to be considered for incorporation by the people maintaining the repository (the maintainers). You are *requesting* that the maintainers *pull* your changes into their repository.
 
-## Making lesson changes with Github
+## Making lesson changes with GitHub
 
 1.  Identify the url and repository name for the lesson you want to make changes for, eg <https://github.com/swcarpentry/git-novice>. The base branch in all the Carpentry lessons is called **gh-pages**.
 
@@ -125,7 +124,7 @@ For more details, see the Carpentry [git lesson reference page](http://swcarpent
 
   ![alt text](images/commit_changes.PNG "commit_changes.PNG")
 
-3. You’ll now see that your new branch with the edits will be a commit ahead of the base branch - click on *“Pull request”* to open the Pull Request submission screen to submit those changes to the master repository for consideration:
+3. You’ll now see that your new branch with the edits will be a commit ahead of the base branch - click on *“Pull request”* to open the pull request submission screen to submit those changes to the master repository for consideration:
 
 ![alt text](images/pull_request_button.PNG "pull_request_button.PNG")
 
@@ -133,7 +132,7 @@ For more details, see the Carpentry [git lesson reference page](http://swcarpent
 
 If you make more changes to this branch after making the pull request, those changes will automatically get added to the existing pull request, as long as the pull request hasn't been closed.
 
-5. Wait for feedback from the community on your Pull Request!
+5. Wait for feedback from the community on your pull request!
 
 6. If you receive feedback, make the changes on GitHub and the pull request will update automatically.
 
@@ -261,7 +260,7 @@ If you make more changes to this branch after making the pull request, those cha
 
     ![navigating_to_a_branch2](images/navigating_to_a_branch2.PNG)
 
-8. Once on your new branch, press the green “Compare and Pull Request Button” on the right:
+8. Once on your new branch, press the green *“Compare and Pull Request"* button on the right:
 
     ![compare_and_pull_request](images/compare_and_pull_request.PNG)
     *Example where the name of the most recently pushed branch is called 'test-branch'*
