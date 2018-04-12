@@ -1,9 +1,8 @@
-## Instructions for contributing using graphical or command line interfaces using git and GitHub
+## Instructions for contributing to The Carpentries' lesson materials using graphical or command line interfaces with git and GitHub
 
 ### Prerequisites and other options
 -   Editing requires a GitHub account. You can set one up at <https://github.com>
--   If you don’t want to use Github, you can suggest changes by emailing a lesson maintainer
-    -   TODO add link to contact maintainers
+-   If you don’t want to use GitHub, you can suggest changes by specifying the lesson in the email title and emailing them to checkout@carpentries.org
 
 Note: The GitHub webpage interface works well for making relatively small edits, like adding a link, fixing typos, or adding several lines of explanation. For larger edits, the command line interface is recommended.
 
@@ -23,11 +22,11 @@ For more details, see the Carpentry [git lesson reference page](http://swcarpent
 -   *local copy*
     -   the version of file stored on your own computer
 -   *remote copy*
-    -   the version of a file stored outside of your own computer, for example stored on an external server, perhaps at Github. Remotes are referenced by nicknames, e.g. *origin* or *upstream*.
+    -   the version of a file stored outside of your own computer, for example stored on an external server, perhaps at GitHub. Remotes are referenced by nicknames, e.g. *origin* or *upstream*.
 -   *branch*
     -   a *branch* is a named series of commits. The default branch when you download a Carpentry lesson is called **gh-pages**. Creating a new branch makes a parallel version of a repository where changes can be made that affect the new branch only and not the original (base) version of the repository.  New branches are often used to test changes or new ideas, which can later be merged with the base branch. Moving from one branch to another is called *checking out* a new branch.
 -   *fork* (GitHub-specific term)
-    -   to copy a repository from another user and store it under your own Github account. Can also refer to the copied repo itself.
+    -   to copy a repository from another user and store it under your own GitHub account. Can also refer to the copied repo itself.
 -   *gh-pages* (GitHub-specific term)
     - stands for "GitHub Pages". This is the name of the main branch in each of the Carpentry lesson material repositories. Branches called gh-pages can be published as webpages hosted by GitHub.
 -   *origin*
@@ -40,10 +39,10 @@ For more details, see the Carpentry [git lesson reference page](http://swcarpent
     -   send committed changes you have made on your local computer to a remote repository. For a change to show up on GitHub, the committed changes must be *pushed* from your computer to the remote repository.
 -   *pull*
     -   download changes from a remote repository to your local version of the same repository. This is useful when other people have made changes to a shared project, and you want to download (*pull*) the changes from the shared remote repository to your own computer.
--   *pull request* (GitHub-specific term)
+-   *pull request* (GitHub-specific term, abbreviated as 'PR')
     -   send proposed changes from a specific version of a repository back to the main version of a repository to be considered for incorporation by the people maintaining the repository (the maintainers). You are *requesting* that the maintainers *pull* your changes into their repository.
 
-## Making lesson changes with Github
+## Making lesson changes with GitHub
 
 1.  Identify the url and repository name for the lesson you want to make changes for, eg <https://github.com/swcarpentry/git-novice>. The base branch in all the Carpentry lessons is called **gh-pages**.
 
@@ -125,7 +124,7 @@ For more details, see the Carpentry [git lesson reference page](http://swcarpent
 
   ![alt text](images/commit_changes.PNG "commit_changes.PNG")
 
-3. You’ll now see that your new branch with the edits will be a commit ahead of the base branch - click on *“Pull request”* to open the Pull Request submission screen to submit those changes to the master repository for consideration:
+3. You’ll now see that your new branch with the edits will be a commit ahead of the base branch - click on *“Pull request”* to open the pull request submission screen to submit those changes to the master repository for consideration:
 
 ![alt text](images/pull_request_button.PNG "pull_request_button.PNG")
 
@@ -133,11 +132,11 @@ For more details, see the Carpentry [git lesson reference page](http://swcarpent
 
 If you make more changes to this branch after making the pull request, those changes will automatically get added to the existing pull request, as long as the pull request hasn't been closed.
 
-5. Wait for feedback from the community on your Pull Request!
+5. Wait for feedback from the community on your pull request!
 
 6. If you receive feedback, make the changes on GitHub and the pull request will update automatically.
 
-7. Congrats on completing the tutorial and thank you for taking the time to submit suggestions to this open-source lesson material! You can use this process of creating a branch with specific edits and submitting it as a pull request for review to contribute to other projects too, keeping in mind the repository names and organization will probably be different between projects.
+7. Congrats on completing the tutorial and thank you for taking the time to submit suggestions to this open-source lesson material! You can use this process of creating a branch with specific edits and submitting it as a pull request for review to contribute to other projects too (including improving this document), keeping in mind the repository names and organization will probably be different between projects.
 
 ## Option 2 - Use a command line interface with git
 
@@ -261,7 +260,7 @@ If you make more changes to this branch after making the pull request, those cha
 
     ![navigating_to_a_branch2](images/navigating_to_a_branch2.PNG)
 
-8. Once on your new branch, press the green “Compare and Pull Request Button” on the right:
+8. Once on your new branch, press the green *“Compare and Pull Request"* button on the right:
 
     ![compare_and_pull_request](images/compare_and_pull_request.PNG)
     *Example where the name of the most recently pushed branch is called 'test-branch'*
@@ -271,10 +270,18 @@ It will be helpful if your description is more detailed than the commit message 
 
 10. Wait for feedback from the community on your pull request!
 
-11. If you want to make additional changes (because you got feedback or think of related improvements), use the terminal to switch back to the branch on your local version that you made the previous edits on. You can see the name of the pull request's branch at the top of the pull request. The git command to return to a branch is `git checkout newbranchname`, e.g `git checkout extraexamples`.
+11. As long as the pull request is open (it has not been merged or closed) you can add additional changes, for example if you got feedback or think of related improvements. To do this, use the terminal to switch back to the branch on your local version that you made the previous edits on. You can see the name of the pull request's branch at the top of the pull request. The git command to return to a branch is `git checkout newbranchname`, e.g `git checkout extraexamples`.
 
-    Then make your additional changes, and commit and push them.
+  Then make your additional changes, and commit and push them with `git push`, eg:  
 
-    When you look at the pull request on GitHub it will update automatically to include the new changes you've pushed.
+    `git add file_you_edited.md`
 
-12. Congrats on completing the tutorial and thank you for taking the time to submit suggestions to this open-source lesson material! You can use this process of creating a branch with specific edits and submitting it as a pull request for review to contribute to other projects too, keeping in mind the repository names and organization will probably be different between projects.
+    `git commit -m "made additional improvement XYZ"`
+
+    `git push`
+
+    You do **not** need to repeat `git push origin branchname` (this will re-push the branch).
+
+    When you look at the pull request on GitHub it will update automatically to add the new commits you've pushed to the existing pull request from this branch.
+
+12. Congrats on completing the tutorial and thank you for taking the time to submit suggestions to this open-source lesson material! You can use this process of creating a branch with specific edits and submitting it as a pull request for review to contribute to other projects too (including improving this document), keeping in mind the repository names and organization will probably be different between projects.
