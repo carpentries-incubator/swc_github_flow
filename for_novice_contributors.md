@@ -272,14 +272,14 @@ It will be helpful if your description is more detailed than the commit message 
 
   Then make your additional changes, and commit and push them with `git push`, eg:  
 
-    `git add file_you_edited.md`
+   `git add file_you_edited.md`
 
-    `git commit -m "made additional improvement XYZ"`
+   `git commit -m "made additional improvement XYZ"`
 
-    `git push`
+   `git push`
 
-    You do **not** need to repeat `git push origin branchname` (this will re-push the branch).
+   You do **not** need to repeat `git push origin branchname` (this will re-push the branch).
 
-    When you look at the pull request on GitHub it will update automatically to add the new commits you've pushed to the existing pull request from this branch.
+   When you look at the pull request on GitHub it will update automatically to add the new commits you've pushed to the existing pull request from this branch.
 
 12. Congrats on completing the tutorial and thank you for taking the time to submit suggestions to this open-source lesson material! You can use this process of creating a branch with specific edits and submitting it as a pull request for review to contribute to other projects too (including improving this document), keeping in mind the repository names and organization will probably be different between projects.
