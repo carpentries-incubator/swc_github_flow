@@ -86,7 +86,7 @@ For more details, see the Carpentry [git lesson reference page](http://swcarpent
 
   ![alt text](images/compare.PNG "compare.PNG - compare button")
 
-  After clikcing "Compare" you will most likely see a message saying **there isn’t anything to compare**, such as -
+  After clicking "Compare" you will most likely see a message saying **there isn’t anything to compare**, such as -
 
   ![alt text](images/nothing_to_compare.PNG "nothing_to_compare.PNG - example of when you need to switch the base for comparison")
 
