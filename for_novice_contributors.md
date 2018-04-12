@@ -86,19 +86,17 @@ For more details, see the Carpentry [git lesson reference page](http://swcarpent
 
   ![alt text](images/compare.PNG "compare.PNG - compare button")
 
-  TODO: describe what to do after hitting "Compare" here
-
-  -   If you see a message saying **there isn’t anything to compare**, such as -
+  After clikcing "Compare" you will most likely see a message saying **there isn’t anything to compare**, such as -
 
   ![alt text](images/nothing_to_compare.PNG "nothing_to_compare.PNG - example of when you need to switch the base for comparison")
 
-  That means that GitHub is comparing your changes with the master repository. In other words, everything that you have, the master has too. In order to make the opposite comparison - to see what the master has that you do not - click on the *“switching the base”* link. TODO - improve wording.
+  That means that GitHub is comparing your repository ("head") with the origin repository ("base"). The message **there isn’t anything to compare** means all of the content of your repository is also present in the origin repository. In order to make the opposite comparison - to compare the origin repository with your repository - click on the *“switching the base”* link. This will make your repository the basis of the comparison ("base") and compare the changes in the origin repository to your repository ("head").
 
-  You should now see something similar to:
+  After clicking the *“switching the base”* link, you should now see something similar to:
 
   ![alt text](images/comparing_changes.PNG "comparing_changes.PNG - selecting which two branches to compare")
 
-  The base and head forks have now been switched, so the comparison is now between the changes in the master repository and yours.
+  Note that the base and head forks have now been switched, so GitHub is now comparing the origin repository to yours (as opposed to comparing your repository to the origin).
 
   Click *“Create pull request”* - this is creating a pull request to you (for your repository) asking to pull changes from the master repository into your repository. Enter a title for the request and then click the green *"Create pull request"* button.
 
