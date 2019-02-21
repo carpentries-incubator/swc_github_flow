@@ -15,7 +15,7 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 
 ### Glossary of some version control vocabulary related to git and GitHub
 
-For more details, see the Carpentry [git lesson reference page](http://swcarpentry.github.io/git-novice/reference/)
+For more details, see the Carpentry [git lesson reference page](http://swcarpentry.github.io/git-novice/reference.html)
 
 -   *repository (short form: repo)*
     -   a storage area for a project containing all the files for the project and the history of all the changes made to those files
