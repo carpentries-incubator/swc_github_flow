@@ -7,10 +7,10 @@
 Note: The GitHub webpage interface works well for making relatively small edits, like adding a link, fixing typos, or adding several lines of explanation. For larger edits, the command line interface is recommended.
 
 ### Contents
--   Glossary of terms
--   Making lesson changes with GitHub
--   Option 1- Use a graphical interface (the GitHub webpage)
--   Option 2- Use a command line interface with git
+-   [Glossary of terms](#glossary-of-some-version-control-vocabulary-related-to-git-and-github)
+-   [Making lesson changes with GitHub](#making-lesson-changes-with-github)
+-   [Option 1- Use a graphical interface (the GitHub webpage)](#option-1---use-a-graphical-interface-the-github-webpage)
+-   [Option 2- Use a command line interface with git](#option-2---use-a-command-line-interface-with-git)
 
 
 ### Glossary of some version control vocabulary related to git and GitHub
