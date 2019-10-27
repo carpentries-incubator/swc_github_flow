@@ -72,7 +72,7 @@ For more details, see the Carpentry [git lesson reference page](http://swcarpent
 
     If **YES** (you have already forked the repository for this lesson):
 
-    a) If you just made the fork, go on to the Making Your Edits section below.
+    a) If you just made the fork, go on to the [Making Your Edits](https://github.com/dmgt/swc_github_flow/blob/master/for_novice_contributors.md#making-your-edits) section below.
 
     b) If you made the fork a while ago, make sure it is up to date with the latest changes in the Carpentry lesson repository with these instructions before starting to edit:
 
@@ -80,7 +80,7 @@ For more details, see the Carpentry [git lesson reference page](http://swcarpent
 
    ![alt text](images/repo_status.PNG "repo_status.PNG - repo with commits behind message")
 
-  -   If the message says that your branch is **even**, proceed to the Making Your Edits section below.
+  -   If the message says that your branch is **even**, proceed to the [Making Your Edits](https://github.com/dmgt/swc_github_flow/blob/master/for_novice_contributors.md#making-your-edits) section below.
 
   -   If it says that your branch is **behind**,  click the grey *"Compare"* icon (below the green *"Clone or download"* button)  on the right:
 
