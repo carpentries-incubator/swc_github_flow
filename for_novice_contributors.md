@@ -161,9 +161,10 @@ If you make more changes to this branch after making the pull request, those cha
 
         https://github.com/daisieh/shell-novice.git
 
-    d) Open your terminal, navigate to a folder you want to keep your copy of the lesson in, and use `git clone` to copy the files from your repository on GitHub to your local computer:
+    d) Open your terminal, navigate to a folder you want to keep your copy of the lesson in, use `git clone` to copy the files from your repository on GitHub to your local computer, and change to that directory:
 
       `git clone https://github.com/yourgithubusername/lessonname.git`
+      `cd lessonname`
 
     e) Lastly, add the Carpentry repository you forked from as a remote using the format `git remote add upstream https://github.com/url/for/lesson`.
 
