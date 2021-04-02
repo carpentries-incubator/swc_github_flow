@@ -1,8 +1,9 @@
-## Instructions for contributing to The Carpentries' lesson materials using graphical or command line interfaces with git and GitHub
+# The Carpentries' Lesson Materials
+## How to contribute to lesson materials on using graphical or command line interfaces with git and GitHub
 
 ### Prerequisites and other options
 -   Editing requires a GitHub account. You can set one up at <https://github.com>
--   If you don’t want to use GitHub, you can suggest changes by specifying the lesson in the email title and emailing them to checkout@carpentries.org
+-   If you don’t want to use GitHub, you can suggest changes by email. Send an email specifying the lesson in the email subject line to checkout@carpentries.org
 
 Note: The GitHub webpage interface works well for making relatively small edits, like adding a link, fixing typos, or adding several lines of explanation. For larger edits, the command line interface is recommended.
 
@@ -17,30 +18,32 @@ Note: The GitHub webpage interface works well for making relatively small edits,
 
 For more details, see the Carpentry [git lesson reference page](http://swcarpentry.github.io/git-novice/reference.html)
 
+-   *project*
+    -  A collection of files related to a deliverable (e.g. this guide).
 -   *repository (short form: repo)*
-    -   a storage area for a project containing all the files for the project and the history of all the changes made to those files
+    -   A storage area containing all the files for a project and the history of all the changes made to those files.
 -   *local copy*
-    -   the version of file stored on your own computer
+    -   The version of a file stored on your own computer.
 -   *remote copy*
-    -   the version of a file stored outside of your own computer, for example stored on an external server, perhaps at GitHub. Remotes are referenced by nicknames, e.g. *origin* or *upstream*.
--   *branch*
-    -   a *branch* is a named series of commits. The default branch when you download a Carpentry lesson is called **gh-pages**. Creating a new branch makes a parallel version of a repository where changes can be made that affect the new branch only and not the original (base) version of the repository.  New branches are often used to test changes or new ideas, which can later be merged with the base branch. Moving from one branch to another is called *checking out* a new branch.
--   *fork* (GitHub-specific term)
-    -   to copy a repository from another user and store it under your own GitHub account. Can also refer to the copied repo itself.
--   *gh-pages* (GitHub-specific term)
-    - stands for "GitHub Pages". This is the name of the main branch in each of the Carpentry lesson material repositories. Branches called gh-pages can be published as webpages hosted by GitHub.
--   *origin*
-    -   the main remote repository you want to download files from or compare local changes you have made to. When you've forked a repo, your *origin* is your new copy of the repository in your account.
--   *upstream*
-    -   the original repository you made your fork from. Both *origin* and *upstream* are remote repositories.
+    -   The version of a file stored outside of your own computer. For example, a version stored on an external server (e.g. GitHub). Remotes are referenced by nicknames, e.g. *origin* or *upstream*.
 -   *commit*
-    -   save changes in your working directory to your local repository.
+    -   While editing a file, you would need to save changes from your working directory to your local repository. This is a *commit*.
+-   *branch*
+    -   A *branch* is a named series of commits. The default branch when you download a Carpentry lesson is called **gh-pages**. Creating a new branch makes a parallel version of a repository where changes can be made that affect the new branch only and not the original (base) version of the repository.  New branches are often used to test changes or new ideas, which can later be merged with the base branch. Moving from one branch to another is called *checking out* a new branch.
+-   *fork* (GitHub-specific term)
+    -   To copy a repository from another user and store it under your own GitHub account. Can also refer to the copied repo itself.
+-   *gh-pages* (GitHub-specific term)
+    - Stands for "GitHub Pages". This is the name of the main branch in each of the Carpentry lesson material repositories. Branches called gh-pages can be published as webpages hosted by GitHub.
+-   *origin*
+    -   The main remote repository from which you want to download files or to which you want to compare your local changes. When you've forked a repo, your *origin* is your new copy of the repository in your account.
+-   *upstream*
+    -   The original repository from which you made your fork. Both *origin* and *upstream* are remote repositories.
 -   *push*
-    -   send committed changes you have made on your local computer to a remote repository. For a change to show up on GitHub, the committed changes must be *pushed* from your computer to the remote repository.
+    -   Send your committed changes from your local computer to a remote repository. For a change to show on GitHub, the committed changes must be *pushed* from your computer to the remote repository.
 -   *pull*
-    -   download changes from a remote repository to your local version of the same repository. This is useful when other people have made changes to a shared project, and you want to download (*pull*) the changes from the shared remote repository to your own computer.
+    -   Download changes from a remote repository to your local version of the same repository. This is useful when other people have made changes to a shared project, and you want to download (*pull*) the changes from the shared remote repository to your own computer.
 -   *pull request* (GitHub-specific term, abbreviated as 'PR')
-    -   send proposed changes from a specific version of a repository back to the main version of a repository to be considered for incorporation by the people maintaining the repository (the maintainers). You are *requesting* that the maintainers *pull* your changes into their repository.
+    -   Send proposed changes from a specific version of a repository back to the main version of a repository to be considered for incorporation. The people who maintain the repository (the maintainers) will review your changes. You are *requesting* that the maintainers *pull* your changes into their repository.
 
 ## Making lesson changes with GitHub
 
