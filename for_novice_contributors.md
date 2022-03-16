@@ -2,7 +2,7 @@
 
 ### Prerequisites and other options
 -   Editing requires a GitHub account. You can set one up at <https://github.com>
--   If you don’t want to use GitHub, you can suggest changes by specifying the lesson in the email title and emailing them to checkout@carpentries.org
+-   If you are [making a contribution as part of Instructor Training checkout](https://carpentries.github.io/instructor-training/checkout/index.html#1-lesson-contributions) and do not want to use GitHub, you can suggest changes by specifying the lesson in the email title and emailing them to instructor.training@carpentries.org
 
 Note: The GitHub webpage interface works well for making relatively small edits, like adding a link, fixing typos, or adding several lines of explanation. For larger edits, the command line interface is recommended.
 
@@ -24,11 +24,11 @@ For more details, see the Carpentry [git lesson reference page](http://swcarpent
 -   *remote copy*
     -   the version of a file stored outside of your own computer, for example stored on an external server, perhaps at GitHub. Remotes are referenced by nicknames, e.g. *origin* or *upstream*.
 -   *branch*
-    -   a *branch* is a named series of commits. The default branch when you download a Carpentry lesson is called **gh-pages**. Creating a new branch makes a parallel version of a repository where changes can be made that affect the new branch only and not the original (base) version of the repository.  New branches are often used to test changes or new ideas, which can later be merged with the base branch. Moving from one branch to another is called *checking out* a new branch.
+    -   a *branch* is a named series of commits. The default branch when you download a Carpentry lesson is usually called **gh-pages** or **main**. Creating a new branch makes a parallel version of a repository where changes can be made that affect the new branch only and not the original (base) version of the repository.  New branches are often used to test changes or new ideas, which can later be merged with the base branch. Moving from one branch to another is called *checking out* a new branch.
 -   *fork* (GitHub-specific term)
     -   to copy a repository from another user and store it under your own GitHub account. Can also refer to the copied repo itself.
 -   *gh-pages* (GitHub-specific term)
-    - stands for "GitHub Pages". This is the name of the main branch in each of the Carpentry lesson material repositories. Branches called gh-pages can be published as webpages hosted by GitHub.
+    - stands for "GitHub Pages". This is the name of the default branch in many of The Carpentries lesson repositories. Files in branches called gh-pages can be published as webpages hosted by GitHub.
 -   *origin*
     -   the main remote repository you want to download files from or compare local changes you have made to. When you've forked a repo, your *origin* is your new copy of the repository in your account.
 -   *upstream*
@@ -44,7 +44,7 @@ For more details, see the Carpentry [git lesson reference page](http://swcarpent
 
 ## Making lesson changes with GitHub
 
-1.  Identify the url and repository name for the lesson you want to make changes for, eg <https://github.com/swcarpentry/git-novice>. The base branch in all the Carpentry lessons is called **gh-pages**.
+1.  Identify the url and repository name for the lesson you want to make changes for, eg <https://github.com/swcarpentry/git-novice>. The default branch for many of The Carpentries lesson repositories is called **gh-pages**, but some lessons use **main**.
 
 2.  It’s not possible for you to directly edit the version of the lesson in the Carpentry repository, so the overall idea of “GitHub Flow” is that you can submit edits by:
 
@@ -62,7 +62,7 @@ For more details, see the Carpentry [git lesson reference page](http://swcarpent
 
     If **NO** (you have not yet forked the repository for this lesson):
 
-    a) Fork a copy of the lesson repository's  ```gh-pages``` branch into your account. Do this by selecting ```gh-pages``` on the dropdown option of branches on the left hand side of the repository's page, then clicking the 'Fork' button in the upper right:
+    a) Fork a copy of the lesson repository's  default branch into your account. Do this by selecting the default branch on the dropdown option of branches on the left hand side of the repository's page, then clicking the 'Fork' button in the upper right:
 
     ![alt text](images/gh_pages_button.PNG "gh_pages_button.PNG - location of branch menu and fork button")
 
@@ -116,7 +116,7 @@ For more details, see the Carpentry [git lesson reference page](http://swcarpent
 
 ![alt text](images/create_branch.PNG "create_branch.PNG - dropdown showing how to create a branch on the graphical interface")
 
- Click the blue *“create branch”* button and this will create a copy of whatever branch you have selected in the drop-down (in this case, `gh-pages`) into a new branch named whatever you enter for the name.
+ Click the blue *“create branch”* button and this will create a copy of whatever branch you have selected in the drop-down into a new branch named whatever you enter for the name.
 
 2. Make your changes to files in the branch you just created. Since you are making changes in a branch you just created, select *“Commit directly”* and then click *“Commit changes”*:
 
@@ -142,7 +142,7 @@ If you make more changes to this branch after making the pull request, those cha
 
     If **NO** (you have not yet forked the repository for this lesson):
 
-    a) Fork a copy of the lesson repository's  ```gh-pages``` branch into your account. Do this by selecting ```gh-pages``` on the dropdown option of branches on the left hand side of the repository's page, then clicking the *'Fork'* button on the upper right:
+    a) Fork a copy of the lesson repository's  default branch into your account. Do this by selecting the default branch on the dropdown option of branches on the left hand side of the repository's page, then clicking the *'Fork'* button on the upper right:
 
     ![alt text](images/gh_pages_button.PNG "gh_pages_button.PNG - location of branch menu and fork button")
 
@@ -195,11 +195,11 @@ If you make more changes to this branch after making the pull request, those cha
 
     b) It’s best practice to make sure your copy of the lesson is up-to-date with the latest changes to the Carpentry version of the lesson, so the difference between your proposed changes and the existing lesson will only be the edits you’re about to make, and not include extra differences between older and newer versions of the lesson you’re editing.
 
-    c) Make sure you're on the main branch, `gh-pages`, in your local copy:
+    c) Make sure you're on the default branch (we will use `gh-pages` as the branch name for our examples) in your local copy:
 
     `git checkout gh-pages`
 
-    d) Make sure your copy of `gh-pages` doesn't have any uncommitted changes:
+    d) Make sure your copy of this default branch doesn't have any uncommitted changes:
 
     `git status`
 
@@ -215,16 +215,16 @@ If you make more changes to this branch after making the pull request, those cha
 
      ` git commit -m "updates from latest Carpentry lesson"`
 
-    g) Push your newly updated local copy of `gh-pages` back to your own remote repository too:
+    g) Push your newly updated local copy of the default branch back to your own remote repository too:
 
       `git push`
 
     Now you’re ready to start editing with step 4 below!
 
-    Note: some open source projects refer to the main branch as `master`, so you may see this term used in other examples online, instead of `gh-pages` or the 'base' branch.
+    Note: some open source projects refer to the default branch as `main` or `master`, so you may see this term used in other examples online, instead of `gh-pages` or the 'base' branch.
 
 ### Making your edits
-4. For each change or group of changes you want to make, start by making a new branch on your local copy of `gh-pages` with `git checkout -b newbranchname gh-pages`. It’s helpful to give the branch a relevant name eg:
+4. For each change or group of changes you want to make, start by making a new branch on your local copy of the default with `git checkout -b newbranchname gh-pages`. It’s helpful to give the branch a relevant name eg:
 
     `git checkout -b extraexamples gh-pages`
 
