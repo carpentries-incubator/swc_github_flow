@@ -24,11 +24,11 @@ For more details, see the Carpentry [git lesson reference page](http://swcarpent
 -   *remote copy*
     -   the version of a file stored outside of your own computer, for example stored on an external server, perhaps at GitHub. Remotes are referenced by nicknames, e.g. *origin* or *upstream*.
 -   *branch*
-    -   a *branch* is a named series of commits. The default branch when you download a Carpentry lesson is called **gh-pages**. Creating a new branch makes a parallel version of a repository where changes can be made that affect the new branch only and not the original (base) version of the repository.  New branches are often used to test changes or new ideas, which can later be merged with the base branch. Moving from one branch to another is called *checking out* a new branch.
+    -   a *branch* is a named series of commits. There is typically a default branch when you download a Carpentry lesso, usually called **gh-pages** or **main**. Creating a new branch makes a parallel version of a repository where changes can be made that affect the new branch only and not the original (base) version of the repository.  New branches are often used to test changes or new ideas, which can later be merged with the base branch. Moving from one branch to another is called *checking out* a new branch.
 -   *fork* (GitHub-specific term)
     -   to copy a repository from another user and store it under your own GitHub account. Can also refer to the copied repo itself.
 -   *gh-pages* (GitHub-specific term)
-    - stands for "GitHub Pages". This is the name of the main branch in each of the Carpentry lesson material repositories. Branches called gh-pages can be published as webpages hosted by GitHub.
+    - stands for "GitHub Pages". This is often the default branch in Carpentry lesson material repositories. Branches called gh-pages can be published as webpages hosted by GitHub.
 -   *origin*
     -   the main remote repository you want to download files from or compare local changes you have made to. When you've forked a repo, your *origin* is your new copy of the repository in your account.
 -   *upstream*
