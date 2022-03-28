@@ -28,7 +28,7 @@ For more details, see the Carpentry [git lesson reference page](http://swcarpent
 -   *fork* (GitHub-specific term)
     -   to copy a repository from another user and store it under your own GitHub account. Can also refer to the copied repo itself.
 -   *gh-pages* (GitHub-specific term)
-    - stands for "GitHub Pages". This is the name of the default branch in many of The Carpentries lesson repositories. Files in branches called gh-pages can be published as webpages hosted by GitHub.
+    - stands for "GitHub Pages". This is often the default branch in Carpentry lesson material repositories. Branches called gh-pages can be published as webpages hosted by GitHub.
 -   *origin*
     -   the main remote repository you want to download files from or compare local changes you have made to. When you've forked a repository, your *origin* is your new copy of the repository in your account.
 -   *upstream*
