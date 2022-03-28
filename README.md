@@ -8,3 +8,4 @@ The pages linked below include a table of lessons for each of The Carpentries le
 -  [Library Carpentry](https://librarycarpentry.org/lessons/)
 -  [Data Carpentry](http://www.datacarpentry.org/lessons/)
 
+This repository is maintained by The Carpentries Curriculum Team. If you would like to volunteer to take over maintenance for this repository, please [open an issue](https://github.com/carpentries-incubator/swc_github_flow/issues/new/choose) or contact us at [team@carpentries.org](mailto:team@carpentries.org)
